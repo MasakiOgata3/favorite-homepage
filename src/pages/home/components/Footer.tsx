@@ -18,8 +18,8 @@ export function Footer() {
               className="h-20 w-auto mb-6"
             />
             <p className="text-gray-400 leading-relaxed mb-4">
-              Make Life Your "Favorite".<br />
-              あなたの人生を「お気に入り」に。
+              Make Work Your "Favorite".<br />
+              あなたの仕事を「お気に入り」に。
             </p>
             <p className="text-gray-500 text-sm">
               Google WorkspaceとAIの力で、<br />
