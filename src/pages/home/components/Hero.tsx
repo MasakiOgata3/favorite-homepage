@@ -32,7 +32,7 @@ export function Hero() {
               </h1>
 
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed font-medium">
-                あなたの仕事を「お気に入り」に。
+                仕事をあなたの「お気に入り」に。
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed">

@@ -19,7 +19,7 @@ export function Footer() {
             />
             <p className="text-gray-400 leading-relaxed mb-4">
               Make Work Your "Favorite".<br />
-              あなたの仕事を「お気に入り」に。
+              仕事をあなたの「お気に入り」に。
             </p>
             <p className="text-gray-500 text-sm">
               Google WorkspaceとAIの力で、<br />

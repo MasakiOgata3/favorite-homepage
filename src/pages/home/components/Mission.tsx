@@ -46,7 +46,7 @@ export function Mission() {
                 Make Work Your "Favorite".
               </p>
               <p className="text-xl text-gray-600 leading-relaxed">
-                あなたの仕事を「お気に入り」に。
+                仕事をあなたの「お気に入り」に。
               </p>
             </div>
             
