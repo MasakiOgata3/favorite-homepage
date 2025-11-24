@@ -43,10 +43,10 @@ export function Mission() {
                 <h3 className="text-2xl font-bold text-gray-900">Mission（使命）</h3>
               </div>
               <p className="text-3xl font-bold text-orange-500 leading-relaxed">
-                Make Life Your "Favorite".
+                Make Work Your "Favorite".
               </p>
               <p className="text-xl text-gray-600 leading-relaxed">
-                あなたの人生を「お気に入り」に。
+                あなたの仕事を「お気に入り」に。
               </p>
             </div>
             
@@ -58,10 +58,10 @@ export function Mission() {
                 <h3 className="text-2xl font-bold text-gray-900">Vision（目指す未来）</h3>
               </div>
               <p className="text-3xl font-bold text-orange-500 leading-relaxed">
-                The Best Life Platform.
+                The Best Work Platform.
               </p>
               <p className="text-xl text-gray-600 leading-relaxed">
-                「お気に入り」の人生を創るための、<br />
+                「お気に入り」の仕事を創るための、<br />
                 最高のパートナーになる。
               </p>
             </div>
