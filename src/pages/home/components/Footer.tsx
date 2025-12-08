@@ -31,13 +31,13 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">サイトマップ</h3>
             <ul className="space-y-2">
               <li>
-                <button onClick={() => scrollToSection('mission')} className="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">
-                  私たちの想い
+                <button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">
+                  サービス
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">
-                  サービス
+                <button onClick={() => scrollToSection('mission')} className="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">
+                  私たちの想い
                 </button>
               </li>
               <li>

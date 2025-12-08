@@ -31,11 +31,11 @@ export function Header() {
           </a>
           
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection('mission')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors whitespace-nowrap cursor-pointer">
-              私たちの想い
-            </button>
             <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors whitespace-nowrap cursor-pointer">
               サービス
+            </button>
+            <button onClick={() => scrollToSection('mission')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors whitespace-nowrap cursor-pointer">
+              私たちの想い
             </button>
             <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors whitespace-nowrap cursor-pointer">
               会社概要
