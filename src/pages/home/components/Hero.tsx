@@ -26,9 +26,8 @@ export function Hero() {
                 </span>
               </div>
               
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                仕事をあなたの<br />
-                <span className="text-orange-500">「お気に入り」</span>に。
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mt-8">
+                仕事をあなたの<span className="text-orange-500">「お気に入り」</span>に。
               </h1>
 
               <p className="text-lg lg:text-xl text-gray-600 leading-relaxed font-normal">
