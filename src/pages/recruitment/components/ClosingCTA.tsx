@@ -158,7 +158,7 @@ export default function ClosingCTA() {
                   </p>
                 </div>
                 <p className="text-emerald-700 mb-3">
-                  こちらから専用のコミュニティにご参加ください
+                  こちらから登録者限定コミュニティにご参加ください
                 </p>
                 <a
                   href="https://line.me/ti/g2/wIml7AjogvnBLChPj10lUnGUr4fVCfltbdmyRg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
