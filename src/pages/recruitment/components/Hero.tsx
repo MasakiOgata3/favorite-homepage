@@ -36,7 +36,7 @@ export default function Hero({ onCTAClick }: HeroProps) {
         
         <p className="text-xl md:text-2xl text-white mb-12 leading-relaxed max-w-4xl mx-auto font-medium">
           AI研修をセットにするだけで、申請報酬が<span className="text-amber-400 font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">4倍（32万円）</span>に。<br />
-          さらに顧問先企業の手残り利益も<span className="text-amber-400 font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">『＋30万円』</span>増える、魔法のようなご提案。
+          さらに顧問先企業の手残り利益も<span className="text-amber-400 font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">『＋30万円』</span>増える、三方よしのご提案。
         </p>
 
         <button
