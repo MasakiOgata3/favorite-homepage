@@ -17,7 +17,7 @@ export default function ClosingCTA() {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbx3FgvJNPt279BNM6OJjdDRXCHlKxTHiPeVi5pyYb7_7yTDAyYpppGwNUmOfFutgfMb/exec', {
+      const response = await fetch('https://formspree.io/f/mdakgzdw', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -25,9 +25,7 @@ export default function ClosingCTA() {
         body: JSON.stringify(formData)
       });
 
-      const result = await response.json();
-
-      if (result.result === 'success') {
+      if (response.ok) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', phone: '', office: '', message: '' });
       } else {
