@@ -54,10 +54,10 @@ export default function ClosingCTA() {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             まずはパートナー登録をして、<br />
-            詳しい説明会にご参加ください。
+            登録者限定コミュニティにご参加ください。
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            登録後に開催される説明会で、具体的な申請スキームを全て解説します。<br />
+            登録後、登録者限定コミュニティで具体的な申請スキームを全て解説します。<br />
             今すぐ無料登録して、新しい収益の柱を手に入れましょう。
           </p>
         </div>
