@@ -199,10 +199,6 @@ export default function ClosingCTA() {
                 </>
               )}
             </button>
-
-            <p className="text-center text-sm text-slate-600 mt-4">
-              ※ 登録後、説明会のご案内をお送りいたします
-            </p>
           </form>
         </div>
 
