@@ -17,20 +17,17 @@ export default function ClosingCTA() {
     setSubmitStatus('idle');
 
     try {
-      const formBody = new URLSearchParams();
-      Object.entries(formData).forEach(([key, value]) => {
-        formBody.append(key, value);
-      });
-
-      const response = await fetch('https://readdy.ai/api/form/d5boovmfmrgp9cvlv6ig', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbx3FgvJNPt279BNM6OJjdDRXCHlKxTHiPeVi5pyYb7_7yTDAyYpppGwNUmOfFutgfMb/exec', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json',
         },
-        body: formBody.toString()
+        body: JSON.stringify(formData)
       });
 
-      if (response.ok) {
+      const result = await response.json();
+
+      if (result.result === 'success') {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', phone: '', office: '', message: '' });
       } else {
