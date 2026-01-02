@@ -150,11 +150,26 @@ export default function ClosingCTA() {
             </div>
 
             {submitStatus === 'success' && (
-              <div className="mb-6 p-4 bg-emerald-50 border-2 border-emerald-500 rounded-lg flex items-center gap-3">
-                <i className="ri-check-line text-2xl text-emerald-600"></i>
-                <p className="text-emerald-700 font-medium">
-                  登録ありがとうございます！ご入力いただいたメールアドレスに詳細をお送りいたします。
+              <div className="mb-6 p-4 bg-emerald-50 border-2 border-emerald-500 rounded-lg">
+                <div className="flex items-center gap-3 mb-3">
+                  <i className="ri-check-line text-2xl text-emerald-600"></i>
+                  <p className="text-emerald-700 font-medium">
+                    登録ありがとうございます！
+                  </p>
+                </div>
+                <p className="text-emerald-700 mb-3">
+                  こちらから専用のコミュニティにご参加ください
                 </p>
+                <a
+                  href="https://line.me/ti/g2/wIml7AjogvnBLChPj10lUnGUr4fVCfltbdmyRg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors font-medium"
+                >
+                  <i className="ri-chat-3-line text-xl"></i>
+                  オープンチャット「AI研修×キャリアアップ助成金」に参加
+                  <i className="ri-external-link-line text-lg"></i>
+                </a>
               </div>
             )}
 
