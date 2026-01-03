@@ -61,13 +61,16 @@ export default function ClientBenefits() {
             
             <div className="space-y-4 mb-6">
               <div className="bg-white rounded-xl p-6">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 flex items-center justify-center bg-emerald-500 text-white rounded-full font-bold">1</div>
                     <span className="text-base font-medium text-slate-700">キャリアアップ助成金</span>
                   </div>
                   <div className="text-3xl font-bold text-emerald-600">80万円</div>
                 </div>
+                <p className="text-xs text-slate-600 leading-relaxed pl-14">
+                  ※人材開発支援助成金対象研修（AI研修）を行うことで重点支援対象者となり、助成金額が40万円⇒80万円にアップします。
+                </p>
               </div>
 
               <div className="bg-white rounded-xl p-6">
