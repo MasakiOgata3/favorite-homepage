@@ -46,11 +46,6 @@ export function Footer() {
                 </button>
               </li>
               <li>
-                <a href="#/sr-recruitment" className="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">
-                  提携社労士様募集
-                </a>
-              </li>
-              <li>
                 <button onClick={() => scrollToSection('contact')} className="text-gray-400 hover:text-orange-500 transition-colors cursor-pointer">
                   お問い合わせ
                 </button>

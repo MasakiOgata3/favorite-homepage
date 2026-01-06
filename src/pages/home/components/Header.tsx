@@ -42,9 +42,6 @@ export function Header() {
             <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors whitespace-nowrap cursor-pointer">
               会社概要
             </button>
-            <a href="#/sr-recruitment" className="text-gray-700 hover:text-orange-500 font-medium transition-colors whitespace-nowrap cursor-pointer">
-              提携社労士様募集
-            </a>
             <button
               onClick={() => scrollToSection('contact')}
               className="bg-orange-500 text-white px-6 py-2.5 rounded-full hover:bg-orange-600 transition-colors font-medium whitespace-nowrap cursor-pointer"
@@ -73,9 +70,6 @@ export function Header() {
               <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors text-left cursor-pointer py-2">
                 会社概要
               </button>
-              <a href="#/sr-recruitment" className="text-gray-700 hover:text-orange-500 font-medium transition-colors text-left cursor-pointer py-2">
-                提携社労士様募集
-              </a>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-colors font-medium cursor-pointer text-center"
