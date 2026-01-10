@@ -19,7 +19,6 @@ export default function Footer() {
               src="https://static.readdy.ai/image/d6cb1f8c632ccff226df483466d8b26e/3bd55c226eb410b1b23141c71acf30d2.png"
               alt="株式会社フェイバリット"
               className="h-10 w-auto mb-6"
-              style={{ filter: 'brightness(0) invert(1)' }}
             />
             <p className="text-white/70 text-sm leading-relaxed">
               株式会社フェイバリット<br />
