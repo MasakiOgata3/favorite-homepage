@@ -9,7 +9,7 @@ export default function CompanySection() {
     { label: '代表取締役', value: '尾形 雅基' },
     { label: '所在地', value: '〒160-0023 東京都新宿区西新宿3-3-13 西新宿水間ビル6階' },
     { label: '連絡先', value: 'info@favorite.co.jp' },
-    { label: '事業内容', value: '企業研修事業、クラウド導入支援事業、DX・業務改善コンサルティング' },
+    { label: '事業内容', value: ['企業研修事業', 'クラウド導入支援事業', 'DX・業務改善コンサルティング'] },
   ];
 
   return (
@@ -51,9 +51,19 @@ export default function CompanySection() {
                     </p>
                   </div>
                   <div className="md:w-2/3">
-                    <p className="text-lg text-navy font-medium">
-                      {info.value}
-                    </p>
+                    {Array.isArray(info.value) ? (
+                      <ul className="space-y-2">
+                        {info.value.map((item, idx) => (
+                          <li key={idx} className="text-lg text-navy font-medium">
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-lg text-navy font-medium">
+                        {info.value}
+                      </p>
+                    )}
                   </div>
                 </div>
               </motion.div>
