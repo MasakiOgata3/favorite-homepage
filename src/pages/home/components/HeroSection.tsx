@@ -44,8 +44,11 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl lg:text-7xl xl:text-8xl font-black text-navy leading-tight mb-6 font-serif"
           >
-            AIを入れるな。<br className="lg:hidden" />
-            AIを使える<span className="text-accent">「人」</span>を育てよ。
+            <span className="lg:inline block">AIを入れるな</span>
+            <br className="lg:hidden" />
+            <span className="lg:inline block">AIを使える<span className="text-accent">「人」</span></span>
+            <br className="lg:hidden" />
+            <span className="lg:inline block">を育てよ</span>
           </motion.h1>
 
           <motion.p
