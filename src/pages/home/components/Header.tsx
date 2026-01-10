@@ -1,11 +1,14 @@
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 interface HeaderProps {
   isScrolled: boolean;
 }
 
 export default function Header({ isScrolled }: HeaderProps) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -17,6 +20,7 @@ export default function Header({ isScrolled }: HeaderProps) {
         top: offsetPosition,
         behavior: 'smooth'
       });
+      setIsMobileMenuOpen(false);
     }
   };
 
@@ -81,10 +85,62 @@ export default function Header({ isScrolled }: HeaderProps) {
             <i className="ri-arrow-right-line"></i>
           </button>
 
-          <button className="lg:hidden text-navy text-2xl cursor-pointer">
-            <i className="ri-menu-line"></i>
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="lg:hidden text-navy text-2xl cursor-pointer"
+          >
+            <i className={isMobileMenuOpen ? 'ri-close-line' : 'ri-menu-line'}></i>
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="lg:hidden border-t border-gray-200 mt-4 pt-4"
+          >
+            <nav className="flex flex-col space-y-4">
+              <button
+                onClick={() => scrollToSection('mission')}
+                className="text-navy hover:text-accent transition-colors duration-300 font-medium text-left py-2 cursor-pointer"
+              >
+                ミッション
+              </button>
+              <button
+                onClick={() => scrollToSection('service')}
+                className="text-navy hover:text-accent transition-colors duration-300 font-medium text-left py-2 cursor-pointer"
+              >
+                研修プログラム
+              </button>
+              <button
+                onClick={() => scrollToSection('environment')}
+                className="text-navy hover:text-accent transition-colors duration-300 font-medium text-left py-2 cursor-pointer"
+              >
+                導入支援
+              </button>
+              <button
+                onClick={() => scrollToSection('company')}
+                className="text-navy hover:text-accent transition-colors duration-300 font-medium text-left py-2 cursor-pointer"
+              >
+                会社概要
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="text-navy hover:text-accent transition-colors duration-300 font-medium text-left py-2 cursor-pointer"
+              >
+                お問い合わせ
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="bg-navy text-white px-6 py-3 rounded-full hover:bg-navy-light transition-all duration-300 font-medium cursor-pointer text-center"
+              >
+                資料請求
+              </button>
+            </nav>
+          </motion.div>
+        )}
       </div>
     </motion.header>
   );
