@@ -46,9 +46,9 @@ export default function HeroSection() {
           >
             <span className="lg:inline block">AIを入れるな</span>
             <br className="lg:hidden" />
-            <span className="lg:inline block">AIを使える<span className="text-accent">「人」</span></span>
+            <span className="lg:inline block">AIを使える</span>
             <br className="lg:hidden" />
-            <span className="lg:inline block">を育てよ</span>
+            <span className="lg:inline block"><span className="text-accent">「人」</span>を育てよ</span>
           </motion.h1>
 
           <motion.p
