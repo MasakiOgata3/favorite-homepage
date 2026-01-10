@@ -1,85 +1,91 @@
-import { useState, useEffect } from 'react';
 
-export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+import { motion } from 'framer-motion';
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+interface HeaderProps {
+  isScrolled: boolean;
+}
 
+export default function Header({ isScrolled }: HeaderProps) {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white md:bg-transparent'}`}>
-      <nav className="px-6 lg:px-12 py-4">
+    <motion.header
+      initial={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
+      animate={{
+        backgroundColor: isScrolled ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0)',
+        boxShadow: isScrolled ? '0 2px 20px rgba(0, 0, 0, 0.05)' : '0 0 0 rgba(0, 0, 0, 0)',
+      }}
+      transition={{ duration: 0.3 }}
+      className="fixed top-0 left-0 right-0 z-50"
+    >
+      <div className="max-w-[1600px] mx-auto px-8 py-5">
         <div className="flex items-center justify-between">
-          <a href="/" className="flex items-center">
+          <div className="flex-shrink-0">
             <img
-              src="https://static.readdy.ai/image/d6cb1f8c632ccff226df483466d8b26e/500a62f7521f04e00190488f7fdd6633.png"
+              src="https://static.readdy.ai/image/d6cb1f8c632ccff226df483466d8b26e/3bd55c226eb410b1b23141c71acf30d2.png"
               alt="株式会社フェイバリット"
-              className="h-14 w-auto"
+              className="h-10 w-auto"
             />
-          </a>
+          </div>
 
-          <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors whitespace-nowrap cursor-pointer">
-              サービス
+          <nav className="hidden lg:flex items-center space-x-10">
+            <button
+              onClick={() => scrollToSection('mission')}
+              className="text-navy hover:text-accent transition-colors duration-300 font-medium whitespace-nowrap cursor-pointer"
+            >
+              ミッション
             </button>
-            <button onClick={() => scrollToSection('mission')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors whitespace-nowrap cursor-pointer">
-              私たちの想い
+            <button
+              onClick={() => scrollToSection('service')}
+              className="text-navy hover:text-accent transition-colors duration-300 font-medium whitespace-nowrap cursor-pointer"
+            >
+              研修プログラム
             </button>
-            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors whitespace-nowrap cursor-pointer">
+            <button
+              onClick={() => scrollToSection('environment')}
+              className="text-navy hover:text-accent transition-colors duration-300 font-medium whitespace-nowrap cursor-pointer"
+            >
+              導入支援
+            </button>
+            <button
+              onClick={() => scrollToSection('company')}
+              className="text-navy hover:text-accent transition-colors duration-300 font-medium whitespace-nowrap cursor-pointer"
+            >
               会社概要
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="bg-orange-500 text-white px-6 py-2.5 rounded-full hover:bg-orange-600 transition-colors font-medium whitespace-nowrap cursor-pointer"
+              className="text-navy hover:text-accent transition-colors duration-300 font-medium whitespace-nowrap cursor-pointer"
             >
               お問い合わせ
             </button>
-          </div>
+          </nav>
 
           <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-gray-700 hover:text-orange-500 transition-colors cursor-pointer"
+            onClick={() => scrollToSection('contact')}
+            className="hidden lg:flex items-center space-x-2 bg-navy text-white px-6 py-3 rounded-full hover:bg-navy-light transition-all duration-300 font-medium whitespace-nowrap cursor-pointer"
           >
-            <i className={`${isMobileMenuOpen ? 'ri-close-line' : 'ri-menu-line'} text-3xl`}></i>
+            <span>資料請求</span>
+            <i className="ri-arrow-right-line"></i>
+          </button>
+
+          <button className="lg:hidden text-navy text-2xl cursor-pointer">
+            <i className="ri-menu-line"></i>
           </button>
         </div>
-
-        {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
-            <div className="flex flex-col gap-4">
-              <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors text-left cursor-pointer py-2">
-                サービス
-              </button>
-              <button onClick={() => scrollToSection('mission')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors text-left cursor-pointer py-2">
-                私たちの想い
-              </button>
-              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-orange-500 font-medium transition-colors text-left cursor-pointer py-2">
-                会社概要
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-colors font-medium cursor-pointer text-center"
-              >
-                お問い合わせ
-              </button>
-            </div>
-          </div>
-        )}
-      </nav>
-    </header>
+      </div>
+    </motion.header>
   );
 }
