@@ -48,9 +48,9 @@ export default function HeroSection() {
               AIを入れるな<span className="hidden lg:inline">。</span>
             </span>
             <br className="lg:hidden" />
-            <span className="block lg:inline lg:mt-0" style={{ marginTop: '-0.3em' }}>AIを使える</span>
+            <span className="block lg:inline" style={{ marginTop: window.innerWidth < 1024 ? '-0.3em' : '0' }}>AIを使える</span>
             <br className="lg:hidden" />
-            <span className="block lg:inline lg:mt-0" style={{ marginTop: '-0.8em' }}>
+            <span className="block lg:inline" style={{ marginTop: window.innerWidth < 1024 ? '-0.8em' : '0' }}>
               <span className="text-accent">「人」</span>を育てよ<span className="hidden lg:inline">。</span>
             </span>
           </motion.h1>
