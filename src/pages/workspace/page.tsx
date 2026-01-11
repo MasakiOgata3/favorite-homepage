@@ -31,15 +31,16 @@ export default function Home() {
       {/* ヘッダー */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
+          <div className="flex items-center gap-6">
             <img
               src="https://static.readdy.ai/image/d6cb1f8c632ccff226df483466d8b26e/3bd55c226eb410b1b23141c71acf30d2.png"
               alt="株式会社フェイバリット"
-              className="h-10 w-auto"
+              className="h-10 w-auto cursor-pointer"
+              onClick={() => navigate('/')}
             />
+            <a onClick={() => navigate('/')} className="hidden md:block text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">ホーム</a>
           </div>
           <nav className="hidden md:flex items-center gap-8">
-            <a onClick={() => navigate('/')} className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">ホーム</a>
             <a href="#benefits" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">メリット</a>
             <a href="#features" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">機能紹介</a>
             <a href="#usecases" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">活用例</a>
