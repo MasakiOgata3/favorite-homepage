@@ -50,7 +50,7 @@ export default function UseCases() {
                     src={useCase.image}
                     alt={useCase.title}
                     className="w-full h-full object-cover object-center"
-                    loading="lazy"
+                    loading="eager"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.style.display = 'none';
