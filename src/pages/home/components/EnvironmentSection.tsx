@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
+import { useNavigate } from 'react-router-dom';
 
 export default function EnvironmentSection() {
   const [ref, isInView] = useInView({ threshold: 0.2 });
+  const navigate = useNavigate();
 
   const features = [
     { icon: 'ri-sparkling-2-fill', label: 'Gemini標準搭載' },
@@ -57,18 +59,10 @@ export default function EnvironmentSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.5 }}
-              onClick={() => {
-                const element = document.getElementById('contact');
-                if (element) {
-                  const offset = 80;
-                  const elementPosition = element.getBoundingClientRect().top;
-                  const offsetPosition = elementPosition + window.pageYOffset - offset;
-                  window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-                }
-              }}
+              onClick={() => navigate('/workspace')}
               className="flex items-center space-x-2 bg-white text-navy px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-300 font-medium whitespace-nowrap cursor-pointer"
             >
-              <span>導入支援の詳細</span>
+              <span>詳細はこちら</span>
               <i className="ri-arrow-right-line"></i>
             </motion.button>
           </motion.div>
