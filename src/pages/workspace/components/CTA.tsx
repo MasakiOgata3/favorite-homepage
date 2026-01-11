@@ -32,11 +32,21 @@ export default function CTA({ onContactClick }: CTAProps) {
         </div>
 
         {/* 特典情報 */}
-        <div className="flex justify-center mt-16">
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 max-w-md">
-            <i className="ri-time-line text-5xl text-yellow-400 mb-4"></i>
-            <h4 className="text-2xl font-bold text-white mb-3">最短3営業日で開始</h4>
-            <p className="text-base text-gray-300">スピーディーな導入をお約束</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 max-w-5xl mx-auto">
+          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <i className="ri-time-line text-4xl text-yellow-400 mb-3"></i>
+            <h4 className="text-lg font-bold text-white mb-2">最短3営業日で開始</h4>
+            <p className="text-sm text-gray-300">スピーディーな導入をお約束</p>
+          </div>
+          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <i className="ri-shield-check-line text-4xl text-yellow-400 mb-3"></i>
+            <h4 className="text-lg font-bold text-white mb-2">セキュリティ対策万全</h4>
+            <p className="text-sm text-gray-300">企業レベルの安全性を確保</p>
+          </div>
+          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <i className="ri-gift-line text-4xl text-yellow-400 mb-3"></i>
+            <h4 className="text-lg font-bold text-white mb-2">無料トライアル実施中</h4>
+            <p className="text-sm text-gray-300">まずはお試しで導入可能</p>
           </div>
         </div>
 
