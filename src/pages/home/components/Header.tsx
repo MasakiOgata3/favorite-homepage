@@ -28,8 +28,8 @@ export default function Header({ isScrolled }: HeaderProps) {
     <motion.header
       initial={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
       animate={{
-        backgroundColor: isScrolled ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0)',
-        boxShadow: isScrolled ? '0 2px 20px rgba(0, 0, 0, 0.05)' : '0 0 0 rgba(0, 0, 0, 0)',
+        backgroundColor: isScrolled || isMobileMenuOpen ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0)',
+        boxShadow: isScrolled || isMobileMenuOpen ? '0 2px 20px rgba(0, 0, 0, 0.05)' : '0 0 0 rgba(0, 0, 0, 0)',
       }}
       transition={{ duration: 0.3 }}
       className="fixed top-0 left-0 right-0 z-50"
