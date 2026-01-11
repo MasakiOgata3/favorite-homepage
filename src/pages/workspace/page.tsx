@@ -39,6 +39,7 @@ export default function Home() {
             />
           </div>
           <nav className="hidden md:flex items-center gap-8">
+            <a onClick={() => navigate('/')} className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">ホーム</a>
             <a href="#benefits" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">メリット</a>
             <a href="#features" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">機能紹介</a>
             <a href="#usecases" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">活用例</a>
