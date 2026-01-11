@@ -1,6 +1,12 @@
 export default function Benefits() {
   const benefits = [
     {
+      icon: 'ri-ai-generate',
+      color: 'from-pink-500 to-pink-600',
+      title: 'AI搭載で生産性向上',
+      description: 'Gemini AIがメール作成、文書編集、データ分析をサポート。ルーティンワークを自動化し、創造的な業務に集中できます。'
+    },
+    {
       icon: 'ri-team-line',
       color: 'from-blue-500 to-blue-600',
       title: 'チーム協働の革新',
@@ -29,12 +35,6 @@ export default function Benefits() {
       color: 'from-teal-500 to-teal-600',
       title: 'スケーラブルな成長',
       description: 'ビジネスの成長に合わせて柔軟に拡張可能。ユーザー数の増減も簡単に対応でき、常に最適な環境を維持できます。'
-    },
-    {
-      icon: 'ri-ai-generate',
-      color: 'from-pink-500 to-pink-600',
-      title: 'AI搭載で生産性向上',
-      description: 'Gemini AIがメール作成、文書編集、データ分析をサポート。ルーティンワークを自動化し、創造的な業務に集中できます。'
     }
   ];
 
