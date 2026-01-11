@@ -14,6 +14,11 @@ export default function Home() {
   const [showContactForm, setShowContactForm] = useState(false);
 
   useEffect(() => {
+    // ページ読み込み時に一番上にスクロール
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
