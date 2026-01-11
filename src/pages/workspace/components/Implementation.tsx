@@ -62,11 +62,18 @@ export default function Implementation() {
 
           <div className="space-y-12">
             {steps.map((step, index) => (
-              <div 
+              <div
                 key={index}
                 className={`flex flex-col lg:flex-row gap-8 items-center ${index % 2 === 0 ? '' : 'lg:flex-row-reverse'}`}
               >
-                <div className={`flex-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
+                {/* ステップ番号（スマホでは最初に表示） */}
+                <div className="relative z-10 flex-shrink-0 order-1 lg:order-2">
+                  <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-orange-600 shadow-xl border-4 border-white">
+                    <span className="text-2xl font-bold text-white">{step.number}</span>
+                  </div>
+                </div>
+
+                <div className={`flex-1 order-2 lg:order-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
                   <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg border-2 border-gray-100 hover:border-orange-300 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
                     <div className="flex items-center gap-4 mb-4">
                       <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 ${index % 2 === 0 ? 'lg:order-2' : ''}`}>
@@ -81,14 +88,7 @@ export default function Implementation() {
                   </div>
                 </div>
 
-                {/* ステップ番号 */}
-                <div className="relative z-10 flex-shrink-0">
-                  <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-orange-600 shadow-xl border-4 border-white">
-                    <span className="text-2xl font-bold text-white">{step.number}</span>
-                  </div>
-                </div>
-
-                <div className="flex-1 hidden lg:block"></div>
+                <div className="flex-1 hidden lg:block order-3"></div>
               </div>
             ))}
           </div>
