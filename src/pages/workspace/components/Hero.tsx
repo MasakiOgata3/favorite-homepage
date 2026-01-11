@@ -26,15 +26,15 @@ export default function Hero({ onContactClick }: HeroProps) {
           <span className="text-yellow-400">ビジネスを加速</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-white/95 mb-12 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl text-white/95 mb-20 leading-relaxed max-w-3xl mx-auto">
           クラウドベースの統合ツールで、チームの生産性を最大化。<br />
           どこからでも、どのデバイスからでも、シームレスに業務を遂行できます。
         </p>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-20">
           <button
             onClick={onContactClick}
-            className="px-10 py-4 bg-yellow-400 text-gray-900 text-lg font-bold rounded-lg hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-xl whitespace-nowrap cursor-pointer"
+            className="px-16 py-5 bg-yellow-400 text-gray-900 text-xl font-bold rounded-lg hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-xl whitespace-nowrap cursor-pointer"
           >
             無料で相談する
           </button>
