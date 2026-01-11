@@ -102,10 +102,10 @@ export default function Implementation() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 flex items-center justify-center bg-white rounded-2xl shadow-md mb-4 mx-auto">
-                <i className="ri-24-hours-line text-3xl text-orange-600"></i>
+                <i className="ri-presentation-line text-3xl text-orange-600"></i>
               </div>
-              <h4 className="text-lg font-bold text-gray-900 mb-2">24時間365日対応</h4>
-              <p className="text-sm text-gray-600">緊急時も安心のサポート体制</p>
+              <h4 className="text-lg font-bold text-gray-900 mb-2">オプション研修対応</h4>
+              <p className="text-sm text-gray-600">必要に応じて追加研修が可能</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 flex items-center justify-center bg-white rounded-2xl shadow-md mb-4 mx-auto">
