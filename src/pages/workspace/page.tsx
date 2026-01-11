@@ -12,6 +12,7 @@ export default function Home() {
   const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     // ページ読み込み時に一番上にスクロール
@@ -30,28 +31,59 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       {/* ヘッダー */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-6">
-            <img
-              src="https://static.readdy.ai/image/d6cb1f8c632ccff226df483466d8b26e/3bd55c226eb410b1b23141c71acf30d2.png"
-              alt="株式会社フェイバリット"
-              className="h-10 w-auto cursor-pointer"
-              onClick={() => navigate('/')}
-            />
-            <a onClick={() => navigate('/')} className="hidden md:block text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">ホーム</a>
-          </div>
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#benefits" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">メリット</a>
-            <a href="#features" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">機能紹介</a>
-            <a href="#usecases" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">活用例</a>
-            <a href="#implementation" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">導入フロー</a>
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-6">
+              <img
+                src="https://static.readdy.ai/image/d6cb1f8c632ccff226df483466d8b26e/3bd55c226eb410b1b23141c71acf30d2.png"
+                alt="株式会社フェイバリット"
+                className="h-10 w-auto cursor-pointer"
+                onClick={() => navigate('/')}
+              />
+              <a onClick={() => navigate('/')} className="hidden md:block text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">ホーム</a>
+            </div>
+
+            {/* デスクトップメニュー */}
+            <nav className="hidden md:flex items-center gap-8">
+              <a href="#benefits" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">メリット</a>
+              <a href="#features" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">機能紹介</a>
+              <a href="#usecases" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">活用例</a>
+              <a href="#implementation" className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors whitespace-nowrap cursor-pointer">導入フロー</a>
+              <button
+                onClick={() => setShowContactForm(true)}
+                className="px-6 py-2.5 bg-accent text-white text-sm font-bold rounded-md hover:bg-accent-dark transition-colors whitespace-nowrap cursor-pointer"
+              >
+                お問い合わせ
+              </button>
+            </nav>
+
+            {/* ハンバーガーメニューボタン */}
             <button
-              onClick={() => setShowContactForm(true)}
-              className="px-6 py-2.5 bg-accent text-white text-sm font-bold rounded-md hover:bg-accent-dark transition-colors whitespace-nowrap cursor-pointer"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden text-gray-700 text-2xl cursor-pointer"
             >
-              お問い合わせ
+              <i className={isMobileMenuOpen ? 'ri-close-line' : 'ri-menu-line'}></i>
             </button>
-          </nav>
+          </div>
+
+          {/* モバイルメニュー */}
+          {isMobileMenuOpen && (
+            <nav className="md:hidden mt-4 pt-4 border-t border-gray-200">
+              <div className="flex flex-col space-y-4">
+                <a onClick={() => { navigate('/'); setIsMobileMenuOpen(false); }} className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors cursor-pointer">ホーム</a>
+                <a href="#benefits" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors cursor-pointer">メリット</a>
+                <a href="#features" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors cursor-pointer">機能紹介</a>
+                <a href="#usecases" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors cursor-pointer">活用例</a>
+                <a href="#implementation" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors cursor-pointer">導入フロー</a>
+                <button
+                  onClick={() => { setShowContactForm(true); setIsMobileMenuOpen(false); }}
+                  className="px-6 py-2.5 bg-accent text-white text-sm font-bold rounded-md hover:bg-accent-dark transition-colors cursor-pointer text-left"
+                >
+                  お問い合わせ
+                </button>
+              </div>
+            </nav>
+          )}
         </div>
       </header>
 
