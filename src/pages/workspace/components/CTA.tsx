@@ -22,37 +22,21 @@ export default function CTA({ onContactClick }: CTAProps) {
           まずは無料相談で、貴社に最適なプランをご提案いたします。
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-          <button 
+        <div className="flex justify-center mb-12">
+          <button
             onClick={onContactClick}
-            className="px-12 py-5 bg-yellow-400 text-gray-900 text-lg font-bold rounded-xl hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-2xl whitespace-nowrap cursor-pointer"
+            className="px-20 py-6 bg-yellow-400 text-gray-900 text-xl font-bold rounded-xl hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-2xl whitespace-nowrap cursor-pointer"
           >
             無料で相談する
           </button>
-          <a 
-            href="#benefits"
-            className="px-12 py-5 bg-white/10 backdrop-blur-md text-white text-lg font-bold rounded-xl hover:bg-white/20 transition-all border-2 border-white/30 whitespace-nowrap cursor-pointer"
-          >
-            もっと詳しく
-          </a>
         </div>
 
         {/* 特典情報 */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
-            <i className="ri-gift-line text-4xl text-yellow-400 mb-3"></i>
-            <h4 className="text-lg font-bold text-white mb-2">初期設定無料</h4>
-            <p className="text-sm text-gray-300">アカウント設定を無料サポート</p>
-          </div>
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
-            <i className="ri-time-line text-4xl text-yellow-400 mb-3"></i>
-            <h4 className="text-lg font-bold text-white mb-2">最短3営業日で開始</h4>
-            <p className="text-sm text-gray-300">スピーディーな導入をお約束</p>
-          </div>
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
-            <i className="ri-shield-check-line text-4xl text-yellow-400 mb-3"></i>
-            <h4 className="text-lg font-bold text-white mb-2">30日間返金保証</h4>
-            <p className="text-sm text-gray-300">安心してお試しいただけます</p>
+        <div className="flex justify-center mt-16">
+          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 max-w-md">
+            <i className="ri-time-line text-5xl text-yellow-400 mb-4"></i>
+            <h4 className="text-2xl font-bold text-white mb-3">最短3営業日で開始</h4>
+            <p className="text-base text-gray-300">スピーディーな導入をお約束</p>
           </div>
         </div>
 
