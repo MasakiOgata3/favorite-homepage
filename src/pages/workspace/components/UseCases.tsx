@@ -45,11 +45,11 @@ export default function UseCases() {
               className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}
             >
               <div className="flex-1">
-                <div className="w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
-                  <img 
+                <div className="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
+                  <img
                     src={useCase.image}
                     alt={useCase.title}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
               </div>
