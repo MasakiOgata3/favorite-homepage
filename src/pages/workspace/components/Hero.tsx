@@ -21,7 +21,7 @@ export default function Hero({ onContactClick }: HeroProps) {
           全ての業務にAIを。
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight md:leading-relaxed">
           Google Workspace で<br />
           <span className="text-yellow-400">ビジネスを加速</span>
         </h1>
