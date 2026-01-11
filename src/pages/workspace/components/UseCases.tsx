@@ -45,11 +45,20 @@ export default function UseCases() {
               className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}
             >
               <div className="flex-1">
-                <div className="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
+                <div className="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
                   <img
                     src={useCase.image}
                     alt={useCase.title}
                     className="w-full h-full object-cover object-center"
+                    loading="lazy"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const parent = target.parentElement;
+                      if (parent) {
+                        parent.innerHTML = '<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-orange-100 to-yellow-100"><div class="text-center p-8"><i class="ri-image-line text-6xl text-orange-400 mb-4"></i><p class="text-orange-600 font-medium">' + useCase.title + '</p></div></div>';
+                      }
+                    }}
                   />
                 </div>
               </div>
