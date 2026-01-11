@@ -26,13 +26,13 @@ export default function Hero({ onContactClick }: HeroProps) {
           <span className="text-yellow-400">ビジネスを加速</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-white/95 mb-8 md:mb-12 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl text-white/95 mb-6 md:mb-12 leading-relaxed max-w-3xl mx-auto">
           クラウドベースの統合ツールで、チームの生産性を最大化。<br />
           どこからでも、どのデバイスからでも、シームレスに業務を遂行できます。
         </p>
 
         {/* スクロールインジケーター */}
-        <div className="flex justify-center mb-6 md:mb-8 animate-bounce">
+        <div className="flex justify-center mb-4 md:mb-8 animate-bounce">
           <i className="ri-arrow-down-line text-white text-3xl"></i>
         </div>
 
