@@ -34,7 +34,7 @@ export default function MissionSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-lg lg:text-xl text-gray-600 leading-loose max-w-3xl mx-auto"
         >
-          日本企業の競争力低下が叫ばれる今、必要なのはツールの導入ではなく<strong className="text-navy font-bold">「人のアップデート」</strong>です。私たちはAI技術とGoogle Workspaceを活用し、働く人が創造的な業務に集中できる社会を実現します。
+          日本企業の競争力低下が叫ばれる今、必要なのはツールの導入ではなく<strong className="text-navy font-bold">「人のアップデート」</strong>です。私たちは企業向けのAI研修とGoogle Workspaceを活用し、働く人が創造的な業務に集中できる社会を実現します。
         </motion.p>
 
         <motion.div
