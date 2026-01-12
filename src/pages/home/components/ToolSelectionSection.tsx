@@ -45,7 +45,7 @@ export default function ToolSelectionSection() {
             TOOL SELECTION
           </div>
 
-          <h2 className="text-4xl lg:text-5xl font-black text-navy mb-6 leading-relaxed">
+          <h2 className="text-4xl lg:text-5xl font-black text-navy mb-6 leading-tight lg:leading-relaxed">
             なぜ、中小企業のAI活用は<br />
             <span className="text-accent">「Google Workspace」一択</span>なのか。
           </h2>
