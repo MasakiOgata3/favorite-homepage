@@ -54,7 +54,7 @@ export default function ToolSelectionSection() {
             世の中には多くのAIツールが存在しますが、<br className="hidden md:block" />
             中小企業の現場に最も速く浸透し、「社員全員」が成果を出せるプラットフォーム。<br />
             それが、Google Workspace（Gemini）であると私たちは確信しています。<br />
-            流行ではなく「実益」を重視し、当社の研修教材として選定したのには、<br className="hidden md:block" />
+            当社の研修プログラムが、あえてGoogle Geminiを教材に選定しているのには、<br className="hidden md:block" />
             明確な<strong className="text-navy">「3つの理由」</strong>があります。
           </p>
         </motion.div>
