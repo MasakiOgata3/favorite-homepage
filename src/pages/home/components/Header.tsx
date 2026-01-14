@@ -58,18 +58,6 @@ export default function Header({ isScrolled }: HeaderProps) {
               研修プログラム
             </button>
             <button
-              onClick={() => scrollToSection('tool-selection')}
-              className="text-navy hover:text-accent transition-colors duration-300 font-medium whitespace-nowrap cursor-pointer"
-            >
-              ツール選定
-            </button>
-            <button
-              onClick={() => scrollToSection('environment')}
-              className="text-navy hover:text-accent transition-colors duration-300 font-medium whitespace-nowrap cursor-pointer"
-            >
-              導入支援
-            </button>
-            <button
               onClick={() => scrollToSection('company')}
               className="text-navy hover:text-accent transition-colors duration-300 font-medium whitespace-nowrap cursor-pointer"
             >
@@ -119,18 +107,6 @@ export default function Header({ isScrolled }: HeaderProps) {
                 className="text-navy hover:text-accent transition-colors duration-300 font-medium text-left py-2 cursor-pointer"
               >
                 研修プログラム
-              </button>
-              <button
-                onClick={() => scrollToSection('tool-selection')}
-                className="text-navy hover:text-accent transition-colors duration-300 font-medium text-left py-2 cursor-pointer"
-              >
-                ツール選定
-              </button>
-              <button
-                onClick={() => scrollToSection('environment')}
-                className="text-navy hover:text-accent transition-colors duration-300 font-medium text-left py-2 cursor-pointer"
-              >
-                導入支援
               </button>
               <button
                 onClick={() => scrollToSection('company')}

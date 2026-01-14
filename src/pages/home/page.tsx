@@ -4,9 +4,7 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import MissionSection from './components/MissionSection';
 import ServiceSection from './components/ServiceSection';
-import ToolSelectionSection from './components/ToolSelectionSection';
 import CurriculumSection from './components/CurriculumSection';
-import EnvironmentSection from './components/EnvironmentSection';
 import CompanySection from './components/CompanySection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -30,9 +28,7 @@ export default function HomePage() {
         <HeroSection />
         <MissionSection />
         <ServiceSection />
-        <ToolSelectionSection />
         <CurriculumSection />
-        <EnvironmentSection />
         <CompanySection />
         <ContactSection />
       </main>

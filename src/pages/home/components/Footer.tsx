@@ -49,14 +49,6 @@ export default function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection('environment')}
-                  className="text-white/70 hover:text-white transition-colors duration-300 cursor-pointer"
-                >
-                  Google Workspace導入支援
-                </button>
-              </li>
-              <li>
-                <button
                   onClick={() => scrollToSection('contact')}
                   className="text-white/70 hover:text-white transition-colors duration-300 cursor-pointer"
                 >
