@@ -48,7 +48,7 @@ export default function ServiceSection() {
               全社員が生成AIを安全かつ効果的に業務活用するための、体系化された教育カリキュラムを提供します。
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-6 mb-10">
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
@@ -64,6 +64,29 @@ export default function ServiceSection() {
                 </motion.div>
               ))}
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              className="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6"
+            >
+              <h3 className="text-xl font-bold text-navy mb-4 flex items-center">
+                <i className="ri-information-line text-blue-500 mr-2"></i>
+                受講に必要な環境について
+              </h3>
+              <div className="space-y-3 text-gray-700 leading-relaxed">
+                <p>
+                  本プログラムは、業務効率を最大化するため、<strong className="text-navy">Google Workspace（Gemini）</strong>の実践活用に特化したカリキュラムとなっています。
+                </p>
+                <p>
+                  そのため、受講にあたっては<strong className="text-navy">Google Workspaceの環境が必須</strong>となります。
+                </p>
+                <p>
+                  導入や初期設定に不安がある企業様は、導入支援を行っている専門家（DXコンサルタント等）にご相談いただくか、弊社窓口までお問い合わせください。
+                </p>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
