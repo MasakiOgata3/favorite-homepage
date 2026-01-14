@@ -62,7 +62,7 @@ export default function HeroSection() {
             className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-10 max-w-2xl"
           >
             ツール導入はゴールではありません。<br />
-            実践型AI研修とGoogle Workspaceで、全社員を「自ら考え、動くDX人材」へ変革します。
+            実践型AI研修で、全社員を「自ら考え、動くDX人材」へ変革します。
           </motion.p>
 
           <motion.div
