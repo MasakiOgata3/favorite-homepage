@@ -6,6 +6,7 @@ export default function CompanySection() {
 
   const companyInfo = [
     { label: '社名', value: '株式会社フェイバリット' },
+    { label: '代表取締役', value: '尾形 雅基' },
     { label: '所在地', value: ['〒160-0023', '東京都新宿区西新宿3-3-13 西新宿水間ビル6階'] },
     { label: '連絡先', value: 'info@favorite.co.jp' },
     { label: '事業内容', value: '企業向けAI人材育成研修事業' },
