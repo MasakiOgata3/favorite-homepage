@@ -7,6 +7,7 @@ export default function ServiceSection() {
 
   const features = [
     '合計12.5時間以上の充実した学習量',
+    '標準学習期間1ヶ月',
     '動画講義＋理解度確認テストによる定着管理',
     '基礎から応用、リスク管理まで網羅した実務直結型',
   ];
