@@ -69,7 +69,7 @@ export default function ServiceSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.7 }}
-              className="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6"
+              className="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6 mb-6"
             >
               <h3 className="text-xl font-bold text-navy mb-4 flex items-center">
                 <i className="ri-information-line text-blue-500 mr-2"></i>
@@ -85,6 +85,22 @@ export default function ServiceSection() {
                 <p>
                   導入や初期設定に不安がある企業様は、導入支援を行っている専門家（DXコンサルタント等）にご相談いただくか、弊社窓口までお問い合わせください。
                 </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="bg-accent/10 border-l-4 border-accent rounded-lg p-6"
+            >
+              <h3 className="text-xl font-bold text-navy mb-4 flex items-center">
+                <i className="ri-price-tag-3-line text-accent mr-2"></i>
+                料金
+              </h3>
+              <div className="flex items-baseline gap-2">
+                <span className="text-4xl font-black text-accent">30万円</span>
+                <span className="text-lg text-gray-600">（税別）</span>
               </div>
             </motion.div>
           </motion.div>
