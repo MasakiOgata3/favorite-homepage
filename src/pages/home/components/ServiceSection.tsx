@@ -6,7 +6,7 @@ export default function ServiceSection() {
   const [ref, isInView] = useInView({ threshold: 0.2 });
 
   const features = [
-    '受講方法：e-learning（LMSを活用）',
+    '受講方法：e-ラーニング（LMS学習管理システムを活用）',
     '合計12.5時間以上の充実した学習量',
     '標準学習期間1ヶ月',
     '動画講義＋理解度確認テストによる定着管理',
