@@ -7,6 +7,7 @@ interface Chapter {
   title: string;
   summary: string;
   details: string;
+  items: string[];
 }
 
 export default function CurriculumSection() {
@@ -19,42 +20,121 @@ export default function CurriculumSection() {
       title: 'DX推進の基礎と環境構築',
       summary: 'Geminiのセキュリティ仕様、安全なセットアップ',
       details: '生成AIの基本概念から、企業での安全な導入方法まで学習します。Geminiのセキュリティ機能を理解し、組織に適した環境構築の手法を習得します。',
+      items: [
+        '業務改革（DX）と生成AI',
+        'Google Workspace基本画面の操作ガイド',
+        'Geminiのセキュリティと情報管理仕様',
+        '無料版と有料版の違い（個人情報保護）',
+        'AI利用の大原則（3つの原則）',
+      ],
     },
     {
       number: 2,
       title: '生成AIへの指示設計技術',
       summary: 'ハルシネーション対策、プロンプトエンジニアリング',
       details: '効果的なプロンプト設計の技術を習得します。ハルシネーション（誤情報生成）を防ぎ、正確で有用な回答を引き出すための実践的なテクニックを学びます。',
+      items: [
+        'プロンプトの基本',
+        'プロンプトの「4要素」',
+        '「役割」の与え方',
+        '「背景」の書き方',
+        '「指示」の書き方',
+        '「条件」の書き方',
+        'ハルシネーション対策①：出力精度を上げるテクニック',
+        'ハルシネーション対策②：有害コンテンツ対策',
+        'ハルシネーション対策③：事実確認と検証',
+        'プロンプト作成演習',
+      ],
     },
     {
       number: 3,
       title: '市場調査・情報収集の高度化',
       summary: 'ディープリサーチによる競合分析の自動化',
       details: 'AIを活用した高度な市場調査手法を学習します。競合分析や業界トレンドの把握を効率化し、戦略的な意思決定を支援するスキルを身につけます。',
+      items: [
+        'ディープリサーチとは',
+        'ディープリサーチの使い方',
+        '市場調査への応用',
+        '競合分析への応用',
+        'トレンド分析への応用',
+        '顧客ニーズ分析',
+        '業界動向リサーチ',
+        '技術トレンドのキャッチアップ',
+        'ディープリサーチ実践演習',
+      ],
     },
     {
       number: 4,
       title: 'ビジネス文書作成の自動化',
       summary: 'メール・報告書のドラフト生成',
       details: '日常業務で頻繁に発生する文書作成を効率化します。メール、報告書、提案書などのドラフトを迅速に生成し、業務時間を大幅に削減する方法を習得します。',
+      items: [
+        '文書作成におけるAI活用の基本',
+        'メール作成の効率化',
+        '報告書・レポートの作成',
+        '提案書・企画書の作成',
+        '議事録の作成と要約',
+        'マニュアル・ガイドラインの作成',
+        '社内連絡文書の作成',
+        'プレゼンテーション資料の作成',
+        '翻訳・多言語対応',
+        '文書作成実践演習',
+      ],
     },
     {
       number: 5,
       title: '社内ナレッジ活用',
       summary: 'RAG技術によるマニュアルデータベース化',
       details: 'RAG（Retrieval-Augmented Generation）技術を用いて、社内の膨大なナレッジを効率的に活用する方法を学びます。マニュアルや過去資料を即座に検索・活用できる環境を構築します。',
+      items: [
+        'RAG技術の概要',
+        'RAGの仕組み',
+        '社内ナレッジの整理と分類',
+        'ドキュメント管理の基本',
+        '検索性を高めるデータ構造',
+        'メタデータの活用',
+        'ナレッジベースの構築',
+        '質問応答システムの設計',
+        '社内FAQの自動化',
+        'マニュアルのデータベース化',
+        '過去資料の活用方法',
+        'ナレッジ共有の促進',
+        '更新・メンテナンスの仕組み',
+        'セキュリティとアクセス管理',
+        'RAG導入事例',
+        'RAG実践演習',
+      ],
     },
     {
       number: 6,
       title: 'クラウドツール連携',
       summary: 'Gmail/Drive連携によるワークフロー統合',
       details: 'Google WorkspaceとAIを連携させ、シームレスなワークフローを実現します。メール管理、ファイル整理、スケジュール調整などを自動化し、生産性を最大化します。',
+      items: [
+        'Gemini for Google Workspace概要',
+        'Gmail連携（メール作成支援）',
+        'Googleドキュメント連携',
+        'Googleスプレッドシート連携',
+        'Googleスライド連携',
+        'Google Meet連携',
+        'Workspace連携実践演習',
+      ],
     },
     {
       number: 7,
       title: 'AI倫理・リスクマネジメント',
       summary: '情報漏洩対策、著作権、Human-in-the-loop',
       details: 'AI活用における倫理的配慮とリスク管理を学びます。情報セキュリティ、著作権保護、人間による最終確認の重要性など、企業として守るべき原則を理解します。',
+      items: [
+        'AI倫理の基本',
+        '情報漏洩対策',
+        '著作権・知的財産権の注意点',
+        'Human-in-the-loop（人間による確認）',
+        'AI利用ポリシーの策定',
+        'リスクアセスメント',
+        '今後のAI技術トレンド',
+        '継続的な学習のすすめ',
+      ],
     },
   ];
 
@@ -124,10 +204,23 @@ export default function CurriculumSection() {
                       className="overflow-hidden"
                     >
                       <div className="px-8 pb-8 pt-0">
-                        <div className="pl-22 border-l-4 border-accent/20 pl-6">
-                          <p className="text-gray-700 leading-relaxed">
+                        <div className="border-l-4 border-accent/20 pl-6 ml-16">
+                          <p className="text-gray-700 leading-relaxed mb-6">
                             {chapter.details}
                           </p>
+                          <div className="grid md:grid-cols-2 gap-3">
+                            {chapter.items.map((item, itemIndex) => (
+                              <div
+                                key={itemIndex}
+                                className="flex items-center space-x-3 bg-gray-50 rounded-lg px-4 py-3"
+                              >
+                                <span className="flex-shrink-0 w-6 h-6 bg-accent/20 text-accent rounded-full flex items-center justify-center text-sm font-bold">
+                                  {itemIndex + 1}
+                                </span>
+                                <span className="text-gray-700 text-sm">{item}</span>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     </motion.div>
