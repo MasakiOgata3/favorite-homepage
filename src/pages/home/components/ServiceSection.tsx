@@ -101,8 +101,8 @@ export default function ServiceSection() {
                 料金
               </h3>
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl font-black text-accent">300,000円</span>
-                <span className="text-lg text-gray-600">（税別）</span>
+                <span className="text-4xl font-black text-accent">330,000円</span>
+                <span className="text-lg text-gray-600">（12.5時間/人）</span>
               </div>
             </motion.div>
           </motion.div>
