@@ -22,9 +22,8 @@ export default function Footer() {
             />
             <p className="text-white/70 text-sm leading-relaxed">
               株式会社フェイバリット<br />
-              〒160-0023<br />
-              東京都新宿区西新宿3-3-13<br />
-              西新宿水間ビル6階
+              〒299-1162<br />
+              千葉県君津市南子安2-6-20-2
             </p>
           </div>
 
