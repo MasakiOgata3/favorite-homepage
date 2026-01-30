@@ -66,8 +66,8 @@ export default function CurriculumSection() {
     {
       number: 4,
       title: 'ビジネス文書作成プロセスの変革',
-      summary: 'メール・議事録・提案書のドラフト生成',
-      details: '日常業務で頻繁に発生する文書作成を効率化します。メール、報告書、提案書などのドラフトを迅速に生成し、業務時間を大幅に削減する方法を習得します。',
+      summary: 'メール・議事録・提案書のドラフト生成、Canvas・Gems活用',
+      details: '日常業務で頻繁に発生する文書作成を効率化します。メール、報告書、提案書などのドラフトを迅速に生成し、Canvas・Gemsなどの機能も活用して業務時間を大幅に削減する方法を習得します。',
       items: [
         'ビジネス文書の型',
         'メール作成：依頼・お礼・お断り',
@@ -79,14 +79,6 @@ export default function CurriculumSection() {
         '要約：長文→1分で読める',
         'ライティング',
         '文書の品質チェック',
-      ],
-    },
-    {
-      number: 5,
-      title: 'データ構造化とナレッジマネジメント（RAG）',
-      summary: 'Canvas・Gems・NotebookLMの活用',
-      details: 'Canvas、Gems、NotebookLMなどの機能を活用し、社内ナレッジを効率的に管理・活用する方法を学びます。',
-      items: [
         'Canvas機能の解説',
         'Gemsの基本的な使い方',
         'プロンプト生成用のGemsを作ろう',
@@ -94,6 +86,14 @@ export default function CurriculumSection() {
         '外出先でメモを記録',
         '音声入力でライティング',
         '人に説明する前の練習をしよう',
+      ],
+    },
+    {
+      number: 5,
+      title: 'データ構造化とナレッジマネジメント（RAG）',
+      summary: 'NotebookLMの活用と社内ナレッジ管理',
+      details: 'NotebookLMを活用し、社内の膨大なナレッジを効率的に管理・活用する方法を学びます。',
+      items: [
         'NotebookLMの基本的な使い方',
         '社内資料を検索して答える仕組み（RAG）',
         '社内データ整理',
