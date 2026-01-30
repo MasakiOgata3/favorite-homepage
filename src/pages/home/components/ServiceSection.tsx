@@ -42,7 +42,7 @@ export default function ServiceSection() {
               MAIN SERVICE
             </div>
 
-            <h2 className="text-4xl lg:text-6xl font-black text-navy mb-6 leading-tight">
+            <h2 className="text-3xl lg:text-5xl font-black text-navy mb-6 leading-tight">
               生成AI活用による<br />業務プロセス改革・DX推進研修
             </h2>
 
