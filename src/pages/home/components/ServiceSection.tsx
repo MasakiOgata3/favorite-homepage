@@ -43,7 +43,7 @@ export default function ServiceSection() {
             </div>
 
             <h2 className="text-4xl lg:text-6xl font-black text-navy mb-6 leading-tight">
-              実践型AI活用・<br />定着化研修プログラム
+              生成AI活用による<br />業務プロセス改革・DX推進研修
             </h2>
 
             <p className="text-lg text-gray-600 leading-relaxed mb-10">
