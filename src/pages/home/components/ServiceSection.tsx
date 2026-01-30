@@ -98,7 +98,7 @@ export default function ServiceSection() {
             >
               <h3 className="text-xl font-bold text-navy mb-4 flex items-center">
                 <i className="ri-price-tag-3-line text-accent mr-2"></i>
-                料金
+                料金（税込み）
               </h3>
               <div className="flex items-baseline gap-2">
                 <span className="text-4xl font-black text-accent">330,000円</span>
