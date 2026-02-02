@@ -8,6 +8,7 @@ export default function CompanySection() {
     { label: '社名', value: '株式会社フェイバリット' },
     { label: '代表取締役', value: '尾形 雅基' },
     { label: '所在地', value: ['〒299-1162', '千葉県君津市南子安2-6-20-2'] },
+    { label: '電話番号', value: '050-6867-0281' },
     { label: '連絡先', value: 'info@favorite.co.jp' },
     { label: '事業内容', value: '企業向けAI人材育成研修事業' },
   ];
