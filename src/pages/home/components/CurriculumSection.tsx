@@ -22,7 +22,7 @@ export default function CurriculumSection() {
       details: '生成AIの基本概念から、Google Workspaceの操作、Geminiへの効果的な質問方法まで学習します。',
       items: [
         '業務改革（DX）と生成AI',
-        'GoogleWorkspace基本画面の操作ガイド',
+        '基本画面の操作ガイド',
         'Geminiへの最初の問いかけ',
         '伝わる質問の作り方（初心者の型）',
         '会話の管理（スレッドの固定・共有）',
