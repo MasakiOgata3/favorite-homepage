@@ -8,7 +8,7 @@ export default function ServiceSection() {
   const features = [
     '受講対象：新任担当者、中堅層',
     '受講方法：e-ラーニング（LMS学習管理システムを活用）',
-    '標準学習期間1ヶ月（合計12.5時間）',
+    '標準学習期間1ヶ月（合計11時間03分）',
     '動画講義＋理解度確認テストによる定着管理',
     '基礎から応用、リスク管理まで網羅した実務直結型',
   ];
@@ -102,7 +102,7 @@ export default function ServiceSection() {
               </h3>
               <div className="flex items-baseline gap-2">
                 <span className="text-4xl font-black text-accent">198,000円</span>
-                <span className="text-lg text-gray-600">（12.5時間/人）</span>
+                <span className="text-lg text-gray-600">（11時間03分/人）</span>
               </div>
             </motion.div>
           </motion.div>
