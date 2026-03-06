@@ -90,8 +90,8 @@ export default function CurriculumSection() {
     },
     {
       number: 5,
-      title: 'データ構造化とナレッジマネジメント（RAG）',
-      summary: 'NotebookLMの活用と社内ナレッジ管理',
+      title: 'NotebookLMの使い方と活用方法',
+      summary: '大量の社内資料の要約と効率的な情報共有',
       details: 'NotebookLMを活用し、社内の膨大なナレッジを効率的に管理・活用する方法を学びます。',
       items: [
         'NotebookLMの基本的な使い方',
