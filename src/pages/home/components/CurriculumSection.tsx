@@ -23,8 +23,8 @@ export default function CurriculumSection() {
     {
       number: 1,
       title: '生成AI導入によるDX推進の基礎と環境構築',
-      summary: 'Geminiの基本操作と質問の仕方を習得',
-      details: '生成AIの基本概念から、Google Workspaceの操作、Geminiへの効果的な質問方法まで学習します。',
+      summary: '生成AIによる業務改革の第一歩とGeminiの基本',
+      details: '生成AIがもたらすDXの基礎知識から、Geminiの基本操作、そして実務で役立つ効果的な質問の組み立て方までを体系的に学びます。',
       items: [
         { title: '業務改革（DX）と生成AI', duration: '3:41' },
         { title: '基本画面の操作ガイド', duration: '12:42' },
@@ -36,8 +36,8 @@ export default function CurriculumSection() {
     {
       number: 2,
       title: 'LLMへの指示設計技術（プロンプトエンジニアリング）',
-      summary: 'プロンプトに必要な要素とハルシネーション対策',
-      details: '効果的なプロンプト設計の技術を習得します。ハルシネーション（誤情報生成）を防ぎ、正確で有用な回答を引き出すための実践的なテクニックを学びます。',
+      summary: '効果的なプロンプト作成の基本と実践テクニック',
+      details: 'プロンプト設計の5要素や制約条件の書き方、出力品質を高めるテクニック、業務別テンプレートの活用方法までを習得します。',
       items: [
         { title: 'プロンプトの基本：AIは「指示」で変わる', duration: '9:11' },
         { title: 'プロンプトに「必要な要素」', duration: '10:59' },
@@ -54,8 +54,8 @@ export default function CurriculumSection() {
     {
       number: 3,
       title: 'AIを活用した市場調査・情報収集（ディープリサーチ）',
-      summary: '調査の型と競合比較の自動化',
-      details: 'AIを活用した高度な市場調査手法を学習します。競合分析や業界トレンドの把握を効率化し、戦略的な意思決定を支援するスキルを身につけます。',
+      summary: 'AIを活用した高度な市場調査と情報分析',
+      details: '目的・仮説に基づいた調査の型から、競合比較の自動化、顧客課題の抽出、調査結果の資料化までを学習します。',
       items: [
         { title: '調査の型：目的→仮説→調べる順番', duration: '10:13' },
         { title: '検索ワード設計（広く→狭く→深く）', duration: '10:16' },
@@ -71,8 +71,8 @@ export default function CurriculumSection() {
     {
       number: 4,
       title: 'ビジネス文書作成プロセスの変革',
-      summary: 'メール・議事録・提案書のドラフト生成、Canvas・Gems活用',
-      details: '日常業務で頻繁に発生する文書作成を効率化します。メール、報告書、提案書などのドラフトを迅速に生成し、Canvas・Gemsなどの機能も活用して業務時間を大幅に削減する方法を習得します。',
+      summary: 'ビジネス文書作成の自動化と最新機能の活用',
+      details: 'メールや提案書のドラフト作成、Canvas・Gemsによる効率化に加え、音声入力を活用したスピーディーなアウトプット手法を学びます。',
       items: [
         { title: 'ビジネス文書の型', duration: '10:16' },
         { title: 'メール作成：依頼・お礼・お断り', duration: '12:28' },
@@ -96,8 +96,8 @@ export default function CurriculumSection() {
     {
       number: 5,
       title: 'NotebookLMの使い方と活用方法',
-      summary: '大量の社内資料の要約 and 効率的な情報共有',
-      details: 'NotebookLMを活用し、社内の膨大なナレッジを効率的に管理・活用する方法を学びます。',
+      summary: 'NotebookLMによるナレッジ共有と資料生成',
+      details: 'NotebookLMを使って膨大な社内資料を効率的に要約・検索し、音声コンテンツや研修動画などの新しい形式へ変換する方法を習得します。',
       items: [
         { title: 'NotebookLMの基本的な使い方', duration: '13:09' },
         { title: '社内資料を検索して答える仕組み（RAG）', duration: '8:00' },
@@ -113,8 +113,8 @@ export default function CurriculumSection() {
     {
       number: 6,
       title: 'Google Workspace連携の実践',
-      summary: 'Gmail・Doc・Sheet・スライド・Drive・Calendar連携',
-      details: 'Google WorkspaceとGeminiを連携させ、シームレスなワークフローを実現します。メール管理、文書作成、スケジュール調整などを効率化します。',
+      summary: 'Google Workspace各アプリとの高度な連携',
+      details: 'Gmail、ドキュメント、スプレッドシートなどの各ツールとGeminiを連携させ、日常業務をシームレスに自動化する実践手法を学びます。',
       items: [
         { title: '各Googleアプリの開き方', duration: '0:46' },
         { title: 'Gmail：メール下書きと要点抽出', duration: '11:49' },
@@ -129,8 +129,8 @@ export default function CurriculumSection() {
     {
       number: 7,
       title: 'ガバナンス・リスク管理と今後の展望',
-      summary: '情報漏洩対策、著作権、人による最終確認、AIとの付き合い方',
-      details: 'AI活用における倫理的配慮とリスク管理を学びます。情報セキュリティ、著作権保護、人間による最終確認の重要性など、企業として守るべき原則を理解します。',
+      summary: 'AI利用の安全性を高めるルールと運用管理',
+      details: '情報漏洩対策や著作権、ハルシネーションへの対処法を学び、安全かつ効果的にAIを使いこなすためのガバナンスとマインドセットを習得します。',
       items: [
         { title: '社内ルール（ガバナンス）の全体像', duration: '7:03' },
         { title: 'AIに入力してはいけない情報', duration: '5:37' },
