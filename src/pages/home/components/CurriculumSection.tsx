@@ -2,12 +2,17 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 
+interface Item {
+  title: string;
+  duration: string;
+}
+
 interface Chapter {
   number: number;
   title: string;
   summary: string;
   details: string;
-  items: string[];
+  items: Item[];
 }
 
 export default function CurriculumSection() {
@@ -21,11 +26,11 @@ export default function CurriculumSection() {
       summary: 'Geminiの基本操作と質問の仕方を習得',
       details: '生成AIの基本概念から、Google Workspaceの操作、Geminiへの効果的な質問方法まで学習します。',
       items: [
-        '業務改革（DX）と生成AI',
-        '基本画面の操作ガイド',
-        'Geminiへの最初の問いかけ',
-        '伝わる質問の作り方（初心者の型）',
-        '会話の管理（スレッドの固定・共有）',
+        { title: '業務改革（DX）と生成AI', duration: '3:41' },
+        { title: '基本画面の操作ガイド', duration: '2:42' },
+        { title: 'Geminiへの最初の問いかけ', duration: '6:44' },
+        { title: '伝わる質問の作り方（初心者の型）', duration: '11:15' },
+        { title: '会話の管理（スレッドの固定・共有）', duration: '6:28' },
       ],
     },
     {
@@ -34,16 +39,16 @@ export default function CurriculumSection() {
       summary: 'プロンプトに必要な要素とハルシネーション対策',
       details: '効果的なプロンプト設計の技術を習得します。ハルシネーション（誤情報生成）を防ぎ、正確で有用な回答を引き出すための実践的なテクニックを学びます。',
       items: [
-        'プロンプトの基本：AIは「指示」で変わる',
-        'プロンプトに「必要な要素」',
-        '制約条件の書き方',
-        '出力形式の指定',
-        '例を見せる指示（お手本付き）',
-        'ステップ分解の指示',
-        '追加質問の技術',
-        '画像・PDF・ファイル入力の基本',
-        '出力の質を上げる工夫',
-        'プロンプトテンプレ集（業務別）',
+        { title: 'プロンプトの基本：AIは「指示」で変わる', duration: '3:12' },
+        { title: 'プロンプトに「必要な要素」', duration: '13:46' },
+        { title: '制約条件の書き方', duration: '13:25' },
+        { title: '出力形式の指定', duration: '12:12' },
+        { title: '例を見せる指示（お手本付き）', duration: '11:42' },
+        { title: 'ステップ分解の指示', duration: '13:40' },
+        { title: '追加質問の技術', duration: '12:22' },
+        { title: '画像・PDF・ファイル入力の基本', duration: '11:45' },
+        { title: '出力の質を上げる工夫', duration: '12:24' },
+        { title: 'プロンプトテンプレ集（業務別）', duration: '12:16' },
       ],
     },
     {
@@ -52,15 +57,15 @@ export default function CurriculumSection() {
       summary: '調査の型と競合比較の自動化',
       details: 'AIを活用した高度な市場調査手法を学習します。競合分析や業界トレンドの把握を効率化し、戦略的な意思決定を支援するスキルを身につけます。',
       items: [
-        '調査の型：目的→仮説→調べる順番',
-        '検索ワード設計（広く→狭く→深く）',
-        '情報源の見極め',
-        '競合比較の自動化',
-        '顧客課題の抽出',
-        '長文の要点化と論点整理',
-        '数字の扱い（推計と事実を分ける）',
-        '調査結果をスライド化',
-        '調査の限界と注意点',
+        { title: '調査の型：目的→仮説→調べる順番', duration: '12:32' },
+        { title: '検索ワード設計（広く→狭く→深く）', duration: '11:13' },
+        { title: '情報源の見極め', duration: '12:15' },
+        { title: '競合比較の自動化', duration: '12:57' },
+        { title: '顧客課題の抽出', duration: '13:42' },
+        { title: '長文の要点化と論点整理', duration: '12:35' },
+        { title: '数字の扱い（推計と事実を分ける）', duration: '12:44' },
+        { title: '調査結果をスライド化', duration: '11:32' },
+        { title: '調査の限界と注意点', duration: '11:55' },
       ],
     },
     {
@@ -69,40 +74,40 @@ export default function CurriculumSection() {
       summary: 'メール・議事録・提案書のドラフト生成、Canvas・Gems活用',
       details: '日常業務で頻繁に発生する文書作成を効率化します。メール、報告書、提案書などのドラフトを迅速に生成し、Canvas・Gemsなどの機能も活用して業務時間を大幅に削減する方法を習得します。',
       items: [
-        'ビジネス文書の型',
-        'メール作成：依頼・お礼・お断り',
-        '社内通知文：ルール変更・周知',
-        '議事録：メモから正式文書へ',
-        '提案書ドラフト：構成→本文',
-        '手順書・マニュアル',
-        '校正・言い換え',
-        '要約：長文→1分で読める',
-        'ライティング',
-        '文書の品質チェック',
-        'Canvas機能の解説',
-        'Gemsの基本的な使い方',
-        'プロンプト生成用のGemsを作ろう',
-        'スマホで音声入力を活用',
-        '外出先でメモを記録',
-        '音声入力でライティング',
-        '人に説明する前の練習をしよう',
+        { title: 'ビジネス文書の型', duration: '12:15' },
+        { title: 'メール作成：依頼・お礼・お断り', duration: '12:23' },
+        { title: '社内通知文：ルール変更・周知', duration: '12:12' },
+        { title: '議事録：メモから正式文書へ', duration: '11:45' },
+        { title: '提案書ドラフト：構成→本文', duration: '12:28' },
+        { title: '手順書・マニュアル', duration: '11:43' },
+        { title: '校正・言い換え', duration: '12:15' },
+        { title: '要約：長文→1分で読める', duration: '11:32' },
+        { title: 'ライティング', duration: '11:12' },
+        { title: '文書の品質チェック', duration: '12:12' },
+        { title: 'Canvas機能の解説', duration: '11:45' },
+        { title: 'Gemsの基本的な使い方', duration: '11:42' },
+        { title: 'プロンプト生成用のGemsを作ろう', duration: '11:12' },
+        { title: 'スマホで音声入力を活用', duration: '12:42' },
+        { title: '外出先でメモを記録', duration: '12:23' },
+        { title: '音声入力でライティング', duration: '11:44' },
+        { title: '人に説明する前の練習をしよう', duration: '11:15' },
       ],
     },
     {
       number: 5,
       title: 'NotebookLMの使い方と活用方法',
-      summary: '大量の社内資料の要約と効率的な情報共有',
+      summary: '大量の社内資料の要約 and 効率的な情報共有',
       details: 'NotebookLMを活用し、社内の膨大なナレッジを効率的に管理・活用する方法を学びます。',
       items: [
-        'NotebookLMの基本的な使い方',
-        '社内資料を検索して答える仕組み（RAG）',
-        '社内データ整理',
-        'PDF/規程から必要情報を抜き出す',
-        'ナレッジ運用フローの確認',
-        'FAQ化：問い合わせ対応を速くする',
-        'NotebookLMで音声コンテンツを作ろう',
-        'NotebookLMでスライド資料化',
-        'NotebookLMで研修動画を作ろう',
+        { title: 'NotebookLMの基本的な使い方', duration: '12:42' },
+        { title: '社内資料を検索して答える仕組み（RAG）', duration: '13:40' },
+        { title: '社内データ整理', duration: '12:42' },
+        { title: 'PDF/規程から必要情報を抜き出す', duration: '12:12' },
+        { title: 'ナレッジ運用フローの確認', duration: '13:13' },
+        { title: 'FAQ化：問い合わせ対応を速くする', duration: '12:45' },
+        { title: 'NotebookLMで音声コンテンツを作ろう', duration: '13:35' },
+        { title: 'NotebookLMでスライド資料化', duration: '11:15' },
+        { title: 'NotebookLMで研修動画を作ろう', duration: '13:12' },
       ],
     },
     {
@@ -111,14 +116,14 @@ export default function CurriculumSection() {
       summary: 'Gmail・Doc・Sheet・スライド・Drive・Calendar連携',
       details: 'Google WorkspaceとGeminiを連携させ、シームレスなワークフローを実現します。メール管理、文書作成、スケジュール調整などを効率化します。',
       items: [
-        '各Googleアプリの開き方',
-        'Gmail：メール下書きと要点抽出',
-        'Gmail：返信方針の提案',
-        'Googleドキュメント：下書き→推敲→整形',
-        'Googleスプレッドシート：表作成・分類・要約',
-        'GoogleスライドとGemini',
-        'Googleドライブ：ファイル探しと整理',
-        'Googleカレンダー：予定とToDoの言語化',
+        { title: '各Googleアプリの開き方', duration: '11:44' },
+        { title: 'Gmail：メール下書きと要点抽出', duration: '11:45' },
+        { title: 'Gmail：返信方針の提案', duration: '11:13' },
+        { title: 'Googleドキュメント：下書き→推敲→整形', duration: '12:12' },
+        { title: 'Googleスプレッドシート：表作成・分類・要約', duration: '11:45' },
+        { title: 'GoogleスライドとGemini', duration: '11:22' },
+        { title: 'Googleドライブ：ファイル探しと整理', duration: '11:55' },
+        { title: 'Googleカレンダー：予定とToDoの言語化', duration: '12:12' },
       ],
     },
     {
@@ -127,14 +132,14 @@ export default function CurriculumSection() {
       summary: '情報漏洩対策、著作権、人による最終確認、AIとの付き合い方',
       details: 'AI活用における倫理的配慮とリスク管理を学びます。情報セキュリティ、著作権保護、人間による最終確認の重要性など、企業として守るべき原則を理解します。',
       items: [
-        '社内ルール（ガバナンス）の全体像',
-        'AIに入力してはいけない情報',
-        '情報の伏せ字・置き換え（マスキング）／匿名化',
-        '著作権・引用・転載の基礎知識',
-        'ハルシネーション対策：事実確認の手順',
-        '人が最終確認する運用の徹底',
-        'AIと長く付き合うコツ',
-        '最終まとめ：実務をDX化するコツ',
+        { title: '社内ルール（ガバナンス）の全体像', duration: '12:42' },
+        { title: 'AIに入力してはいけない情報', duration: '11:12' },
+        { title: '情報の伏せ字・置き換え（マスキング）／匿名化', duration: '12:12' },
+        { title: '著作権・引用・転載の基礎知識', duration: '11:33' },
+        { title: 'ハルシネーション対策：事実確認の手順', duration: '12:22' },
+        { title: '人が最終確認する運用の徹底', duration: '11:44' },
+        { title: 'AIと長く付き合うコツ', duration: '11:45' },
+        { title: '最終まとめ：実務をDX化するコツ', duration: '11:42' },
       ],
     },
   ];
@@ -217,12 +222,17 @@ export default function CurriculumSection() {
                               return (
                                 <div
                                   key={itemIndex}
-                                  className="flex items-center space-x-3 bg-gray-50 rounded-lg px-4 py-3"
+                                  className="flex items-center justify-between bg-gray-50 rounded-lg px-4 py-3"
                                 >
-                                  <span className="flex-shrink-0 w-7 h-7 bg-accent/20 text-accent rounded-full flex items-center justify-center text-sm font-bold">
-                                    {globalIndex}
+                                  <div className="flex items-center space-x-3">
+                                    <span className="flex-shrink-0 w-7 h-7 bg-accent/20 text-accent rounded-full flex items-center justify-center text-sm font-bold">
+                                      {globalIndex}
+                                    </span>
+                                    <span className="text-gray-700 text-sm font-medium">{item.title}</span>
+                                  </div>
+                                  <span className="text-gray-400 text-xs font-mono ml-4">
+                                    {item.duration}
                                   </span>
-                                  <span className="text-gray-700 text-sm">{item}</span>
                                 </div>
                               );
                             })}
