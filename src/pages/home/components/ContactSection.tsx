@@ -19,7 +19,7 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://formspree.io/f/mqakzojo', {
+      const response = await fetch('https://formspree.io/f/mlgpeyge', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -183,7 +183,7 @@ export default function ContactSection() {
           </form>
 
           <p className="text-center text-gray-500 text-sm mt-8">
-            または <a href="mailto:info@favorite.co.jp" className="text-accent hover:underline">info@favorite.co.jp</a> までメールでお問い合わせください
+            または <a href="mailto:ogata@favorite.co.jp" className="text-accent hover:underline">ogata@favorite.co.jp</a> までメールでお問い合わせください
           </p>
         </motion.div>
       </div>
