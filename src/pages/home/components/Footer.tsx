@@ -86,22 +86,7 @@ export default function Footer() {
               </li>
             </ul>
 
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors duration-300 cursor-pointer"
-                aria-label="LinkedIn"
-              >
-                <i className="ri-linkedin-fill text-lg"></i>
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors duration-300 cursor-pointer"
-                aria-label="Twitter"
-              >
-                <i className="ri-twitter-x-line text-lg"></i>
-              </a>
-            </div>
+
           </div>
         </div>
 
