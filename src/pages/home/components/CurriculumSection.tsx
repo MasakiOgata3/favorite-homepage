@@ -112,7 +112,7 @@ export default function CurriculumSection() {
       details: 'Google WorkspaceとGeminiを連携させ、シームレスなワークフローを実現します。メール管理、文書作成、スケジュール調整などを効率化します。',
       items: [
         '各Googleアプリの開き方',
-        'Gmail：メール下書きと要約',
+        'Gmail：メール下書きと要点抽出',
         'Gmail：返信方針の提案',
         'Googleドキュメント：構成案→執筆→校正',
         'Googleスプレッドシート：データ整理・分析・要約',
