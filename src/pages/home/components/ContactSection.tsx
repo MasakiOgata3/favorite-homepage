@@ -14,26 +14,31 @@ export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      // メール本文の作成
-      const subject = encodeURIComponent(`【お問い合わせ】${formData.company} ${formData.name}様`);
-      const body = encodeURIComponent(
-        `お名前: ${formData.name}\n` +
-        `会社名: ${formData.company}\n` +
-        `メールアドレス: ${formData.email}\n\n` +
-        `お問い合わせ内容:\n${formData.message}`
-      );
+      const response = await fetch('https://formspree.io/f/mqakzojo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          company: formData.company,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
 
-      // mailtoリンクの生成と実行
-      window.location.href = `mailto:info@favorite.co.jp?subject=${subject}&body=${body}`;
-      
-      setSubmitStatus('success');
-      // フォームをリセット（必要に応じて）
-      // setFormData({ name: '', company: '', email: '', message: '' });
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', company: '', email: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
     } catch (error) {
       setSubmitStatus('error');
     } finally {
