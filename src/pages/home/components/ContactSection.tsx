@@ -14,31 +14,26 @@ export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      const formBody = new URLSearchParams();
-      formBody.append('name', formData.name);
-      formBody.append('company', formData.company);
-      formBody.append('email', formData.email);
-      formBody.append('message', formData.message);
+      // メール本文の作成
+      const subject = encodeURIComponent(`【お問い合わせ】${formData.company} ${formData.name}様`);
+      const body = encodeURIComponent(
+        `お名前: ${formData.name}\n` +
+        `会社名: ${formData.company}\n` +
+        `メールアドレス: ${formData.email}\n\n` +
+        `お問い合わせ内容:\n${formData.message}`
+      );
 
-      const response = await fetch('https://readdy.ai/api/public/form/submit/favorite-contact-form', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: formBody.toString(),
-      });
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({ name: '', company: '', email: '', message: '' });
-      } else {
-        setSubmitStatus('error');
-      }
+      // mailtoリンクの生成と実行
+      window.location.href = `mailto:info@favorite.co.jp?subject=${subject}&body=${body}`;
+      
+      setSubmitStatus('success');
+      // フォームをリセット（必要に応じて）
+      // setFormData({ name: '', company: '', email: '', message: '' });
     } catch (error) {
       setSubmitStatus('error');
     } finally {
