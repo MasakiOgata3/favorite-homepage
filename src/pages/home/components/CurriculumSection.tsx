@@ -100,9 +100,9 @@ export default function CurriculumSection() {
         'PDF/規程から必要情報を抜き出す',
         'ナレッジ運用フローの確認',
         'FAQ化：問い合わせ対応を速くする',
-        'NotebookLMで音声コンテンツを作ろう',
-        'NotebookLMでスライド資料化',
-        'NotebookLMで研修動画を作ろう',
+        'NotebookLMで音声活用（オーディオガイド）',
+        'NotebookLMでスライド資料作成',
+        'NotebookLMで研修動画台本を作ろう',
       ],
     },
     {
@@ -117,23 +117,23 @@ export default function CurriculumSection() {
         'Sheet：表作成・分類・要約',
         'Googleスライド：資料の骨子作成',
         'Drive：ファイル探しと整理',
-        'Calendar/Tasks：予定とToDoの言語化',
+        'Googleカレンダー/タスク：整理とToDo。リスト化',
       ],
     },
     {
       number: 7,
       title: 'ガバナンス・リスク管理と今後の展望',
-      summary: '情報漏洩対策、著作権、人による最終確認',
+      summary: '情報漏洩対策、著作権、人による最終確認、AIとの付き合い方',
       details: 'AI活用における倫理的配慮とリスク管理を学びます。情報セキュリティ、著作権保護、人間による最終確認の重要性など、企業として守るべき原則を理解します。',
       items: [
         '社内ルール（ガバナンス）の全体像：AIを安全に使う決めごと',
         'AIに入力してはいけない情報',
         '情報の伏せ字・置き換え（マスキング）／個人が特定できない形（匿名化）',
         '著作権・引用・転載の基礎',
-        '誤情報対策：事実確認の手順',
+        'ハルシネーション対策：事実確認の手順',
         '人が最終確認する運用の徹底',
         'AIと長く付き合うコツ',
-        '最終まとめ：実務をDX化するコツ',
+        '自分への一歩：実務をDX化するコツ',
       ],
     },
   ];
@@ -209,17 +209,22 @@ export default function CurriculumSection() {
                             {chapter.details}
                           </p>
                           <div className="grid md:grid-cols-2 gap-3">
-                            {chapter.items.map((item, itemIndex) => (
-                              <div
-                                key={itemIndex}
-                                className="flex items-center space-x-3 bg-gray-50 rounded-lg px-4 py-3"
-                              >
-                                <span className="flex-shrink-0 w-6 h-6 bg-accent/20 text-accent rounded-full flex items-center justify-center text-sm font-bold">
-                                  {itemIndex + 1}
-                                </span>
-                                <span className="text-gray-700 text-sm">{item}</span>
-                              </div>
-                            ))}
+                            {chapter.items.map((item, itemIndex) => {
+                              const globalIndex = chapters
+                                .slice(0, index)
+                                .reduce((sum, ch) => sum + ch.items.length, 0) + itemIndex + 1;
+                              return (
+                                <div
+                                  key={itemIndex}
+                                  className="flex items-center space-x-3 bg-gray-50 rounded-lg px-4 py-3"
+                                >
+                                  <span className="flex-shrink-0 w-7 h-7 bg-accent/20 text-accent rounded-full flex items-center justify-center text-sm font-bold">
+                                    {globalIndex}
+                                  </span>
+                                  <span className="text-gray-700 text-sm">{item}</span>
+                                </div>
+                              );
+                            })}
                           </div>
                         </div>
                       </div>
