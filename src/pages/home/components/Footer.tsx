@@ -91,18 +91,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
             <p className="text-white/50 text-sm">
               © 2025 Favorite Co., Ltd. All rights reserved.
             </p>
-            <a
-              href="https://readdy.ai/?ref=logo"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="text-white/50 text-sm hover:text-white transition-colors duration-300"
-            >
-              Powered by Readdy
-            </a>
           </div>
         </div>
       </div>
