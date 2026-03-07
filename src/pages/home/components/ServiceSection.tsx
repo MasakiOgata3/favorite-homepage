@@ -81,7 +81,7 @@ export default function ServiceSection() {
                   本プログラムは、業務効率を最大化するため、<strong className="text-navy">Google Workspace（Gemini）</strong>の実践活用に特化したカリキュラムとなっています。
                 </p>
                 <p>
-                  そのため、受講にあたっては<strong className="text-navy">Google Workspaceの環境が必須</strong>となります。
+                  そのため、受講にあたっては<strong className="text-navy">Google Workspaceの環境が必要</strong>となります。
                 </p>
                 <p>
                   導入や初期設定に不安がある企業様は、導入支援を行っている専門家（DXコンサルタント等）にご相談いただくか、弊社窓口までお問い合わせください。
