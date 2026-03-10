@@ -23,9 +23,8 @@ export default function RecruitmentPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Fixed Navigation */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-      }`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
@@ -82,10 +81,10 @@ export default function RecruitmentPage() {
               <h4 className="font-bold text-lg mb-4">会社情報</h4>
               <div className="text-sm text-slate-300 space-y-2">
                 <p className="font-semibold">株式会社フェイバリット</p>
-                <p>〒160-0023<br />東京都新宿区西新宿3-3-13<br />西新宿水間ビル6階</p>
+                <p>〒299-1162<br />千葉県君津市南子安2-6-20-2</p>
                 <p>
-                  <a href="mailto:ogata@favorite.co.jp" className="hover:text-emerald-400 transition-colors cursor-pointer">
-                    ogata@favorite.co.jp
+                  <a href="mailto:info@favorite.co.jp" className="hover:text-emerald-400 transition-colors cursor-pointer">
+                    info@favorite.co.jp
                   </a>
                 </p>
               </div>
