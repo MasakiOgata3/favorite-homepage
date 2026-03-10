@@ -28,7 +28,7 @@ export default function ClientBenefits() {
                 通常のキャリアアップ申請
               </h3>
             </div>
-            
+
             <div className="bg-white rounded-xl p-6 mb-6 space-y-4">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-lg font-medium text-slate-700">受給額</span>
@@ -55,7 +55,7 @@ export default function ClientBenefits() {
             <div className="absolute -top-4 -right-4 bg-gradient-to-r from-amber-400 to-orange-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg">
               おすすめ！
             </div>
-            
+
             <div className="text-center mb-6">
               <span className="inline-block px-6 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-bold rounded-full mb-4">
                 パターンB
@@ -64,7 +64,7 @@ export default function ClientBenefits() {
                 当社のAI研修スキーム活用
               </h3>
             </div>
-            
+
             <div className="space-y-4 mb-6">
               <div className="bg-white rounded-xl p-6">
                 <div className="flex items-center justify-between mb-2">
@@ -149,8 +149,8 @@ export default function ClientBenefits() {
               <div className="text-4xl md:text-6xl font-bold text-emerald-600 leading-tight">
                 「+240,000円」増加
               </div>
-              <p className="mt-4 text-slate-600 text-xs md:text-sm font-medium leading-relaxed px-2">
-                研修費用20万円と高額な社労士報酬を支払っても、<br className="hidden md:block" />
+              <p className="mt-4 text-slate-600 text-sm md:text-lg font-medium leading-relaxed px-2">
+                研修費用20万円と社労士報酬を支払っても、<br className="hidden md:block" />
                 顧問先企業は確実に利益が増えます
               </p>
             </div>
