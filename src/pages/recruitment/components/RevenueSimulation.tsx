@@ -34,7 +34,7 @@ export default function RevenueSimulation() {
             社労士の収益シミュレーション
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            1社あたり<span className="text-emerald-600">“24万円”</span>の<br />
+            申請1名あたり<span className="text-emerald-600">“24万円”</span>の<br />
             正味報酬・内訳
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -88,7 +88,7 @@ export default function RevenueSimulation() {
           <div className="mb-6">
             <i className="ri-trophy-line text-6xl"></i>
           </div>
-          <h3 className="text-2xl font-bold mb-4">1社あたりの合計報酬</h3>
+          <h3 className="text-2xl font-bold mb-4">申請1名あたりの合計報酬</h3>
           <div className="text-7xl font-bold mb-4">24万円</div>
           <div className="inline-block bg-white/20 rounded-full px-8 py-3 backdrop-blur-sm">
             <span className="text-xl font-bold">通常はキャリアアップ助成金40万円の20%で8万円のところ、その3倍の報酬！</span>
