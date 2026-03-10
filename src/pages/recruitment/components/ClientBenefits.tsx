@@ -7,7 +7,7 @@ export default function ClientBenefits() {
             最重要ポイント
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            なぜ、研修費40万円を払っても、<br />
+            なぜ、研修費20万円を払っても、<br />
             <span className="text-emerald-600">会社の手残りが増えるのか？</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
@@ -79,14 +79,14 @@ export default function ClientBenefits() {
                     <div className="w-10 h-10 flex items-center justify-center bg-teal-500 text-white rounded-full font-bold">2</div>
                     <span className="text-base font-medium text-slate-700">人材開発支援助成金</span>
                   </div>
-                  <div className="text-3xl font-bold text-teal-600">44万円</div>
+                  <div className="text-3xl font-bold text-teal-600">24万円</div>
                 </div>
               </div>
 
               <div className="bg-emerald-500 text-white rounded-xl p-4">
                 <div className="flex items-center justify-between">
                   <span className="text-base font-bold">助成金受給総額</span>
-                  <div className="text-4xl font-bold">104万円</div>
+                  <div className="text-4xl font-bold">84万円</div>
                 </div>
               </div>
 
@@ -97,7 +97,7 @@ export default function ClientBenefits() {
               <div className="bg-white rounded-xl p-4 border-2 border-slate-300">
                 <div className="flex items-center justify-between">
                   <span className="text-base font-medium text-slate-700">研修費用</span>
-                  <div className="text-2xl font-bold text-slate-900">40万円</div>
+                  <div className="text-2xl font-bold text-slate-900">20万円</div>
                 </div>
               </div>
 
@@ -109,7 +109,7 @@ export default function ClientBenefits() {
             <div className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-xl p-6 text-center shadow-xl">
               <div className="text-sm mb-2">会社の手残り</div>
               <div className="text-6xl font-bold mb-2">64万円</div>
-              <div className="text-sm opacity-90">104万円 - 40万円</div>
+              <div className="text-sm opacity-90">84万円 - 20万円</div>
             </div>
           </div>
         </div>
