@@ -3,22 +3,22 @@ export default function ThreeWins() {
     {
       icon: 'ri-user-star-line',
       title: '社労士の先生',
-      benefit: '報酬が3倍に',
-      description: '通常8万円の申請報酬が、約24万円に増額。顧問先を喜ばせながら収益最大化。',
+      benefit: '報酬の最大化',
+      description: 'AIを通じた高単価提案が可能。1社あたりの報酬が約24万円にアップし、顧問先満足度も向上。',
       color: 'from-emerald-500 to-teal-500'
     },
     {
       icon: 'ri-building-line',
       title: '顧問先企業',
-      benefit: '手残り+24万円',
-      description: 'AI研修費を払っても、助成金で逆に利益が増える。実質無料以下でAI人材育成。',
+      benefit: '手残り24万円増',
+      description: '研修費を払っても受給額が跳ねるため、手残りが拡大。実質無料以上でAI人材を育成。',
       color: 'from-teal-500 to-cyan-500'
     },
     {
       icon: 'ri-team-line',
       title: '従業員',
-      benefit: 'AIスキル習得',
-      description: '最新のAI技術を学び、市場価値が向上。キャリアアップの実現。',
+      benefit: 'AIスキルの習得',
+      description: '業務に直結するAI活用術を学び、市場価値が向上。キャリアアップの機会を提供。',
       color: 'from-cyan-500 to-blue-500'
     }
   ];

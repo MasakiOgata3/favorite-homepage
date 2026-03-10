@@ -34,11 +34,11 @@ export default function RevenueSimulation() {
             収益シミュレーション
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            顧問先を喜ばせながら、<br />
-            <span className="text-emerald-600">先生の報酬も最大化。</span>
+            1社あたり<span className="text-emerald-600">“24万円”</span>の<br />
+            正味報酬・内訳
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            1社あたりの収益が、通常の3倍に。複数社に提案すれば、さらに大きな収益に。
+            顧問先企業の利益を最大化しながら、先生の報酬もこれまでになく拡大します。
           </p>
         </div>
 

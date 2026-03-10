@@ -4,15 +4,15 @@ export default function ClientBenefits() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-6 py-2 bg-emerald-500 text-white text-sm font-bold rounded-full mb-4">
-            最重要ポイント
+            なぜAI研修か？
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            なぜ、研修費20万円を払っても、<br />
-            <span className="text-emerald-600">会社の手残りが増えるのか？</span>
+            助成金受給の鍵は<br />
+            <span className="text-emerald-600">“重点支援対象者”への該当</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            「社長、お金を出してAI研修を行うと、逆にお金が増えて戻ってきます。<br />
-            そのカラクリをご説明します。」
+            AI研修をセットで実施することで、企業は「重点支援対象者」となり、<br />
+            キャリアアップ助成金の受給額が飛躍的に向上します。
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export default function ClientBenefits() {
         {/* Impact Comparison */}
         <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-12 border-4 border-amber-400 mb-16">
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-slate-900 mb-8">結論</h3>
+            <h3 className="text-3xl font-bold text-slate-900 mb-8">まずは「金額的メリット」を見てください</h3>
             <div className="flex items-center justify-center gap-8 flex-wrap mb-8">
               <div className="text-center">
                 <div className="text-lg text-slate-600 mb-2">通常申請</div>
@@ -125,16 +125,16 @@ export default function ClientBenefits() {
               </div>
               <div className="text-5xl font-bold text-amber-500">VS</div>
               <div className="text-center">
-                <div className="text-lg text-slate-600 mb-2">本スキーム</div>
+                <div className="text-lg text-slate-600 mb-2">AI研修セット</div>
                 <div className="text-5xl font-bold text-emerald-600">64万円</div>
               </div>
             </div>
             <div className="bg-white rounded-xl p-8 inline-block shadow-lg">
               <div className="text-2xl font-bold text-slate-900 mb-2">
-                AI研修を導入した方が、会社に残るお金が
+                研修費20万円を差し引いても
               </div>
               <div className="text-6xl font-bold text-emerald-600">
-                24万円も多い！
+                24万円も「手残り」が多い！
               </div>
             </div>
           </div>

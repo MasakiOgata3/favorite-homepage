@@ -30,13 +30,13 @@ export default function Hero({ onCTAClick }: HeroProps) {
         </div>
         
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-          いつもの「キャリアアップ助成金申請」、<br />
-          <span className="text-amber-400 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">今のままでは大損です。</span>
+          収益シミュレーションと<br />
+          <span className="text-amber-400 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">本質的価値</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-white mb-12 leading-relaxed max-w-4xl mx-auto font-medium">
-          AI研修をセットにするだけで、申請報酬が<span className="text-amber-400 font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">3倍（約24万円）</span>に。<br />
-          さらに顧問先企業の手残り利益も<span className="text-amber-400 font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">『＋24万円』</span>増える、三方よしのご提案。
+          キャリアアップ助成金の正社員化コースに<span className="text-amber-400 font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">「AI研修」</span>をセット。<br />
+          「重点支援対象者」となることで、社労士報酬・顧問先利益の最大化を実現。
         </p>
 
         <button
