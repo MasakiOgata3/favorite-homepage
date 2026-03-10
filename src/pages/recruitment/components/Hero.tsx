@@ -25,7 +25,7 @@ export default function Hero({ onCTAClick }: HeroProps) {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
         <div className="mb-8">
           <span className="inline-block px-8 py-3 bg-emerald-500/90 text-white text-lg md:text-xl font-bold rounded-full mb-6">
-            社会保険労務士の先生方へ
+            キャリアアップ助成金を扱う社労士様へ
           </span>
         </div>
         
