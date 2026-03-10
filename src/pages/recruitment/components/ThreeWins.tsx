@@ -4,7 +4,7 @@ export default function ThreeWins() {
       icon: 'ri-user-star-line',
       title: '社労士の先生',
       benefit: '報酬の最大化',
-      description: 'AIを通じた高単価提案が可能。1社あたりの報酬が約24万円にアップし、顧問先満足度も向上。',
+      description: '申請1名あたりの報酬が3倍（約24万円）にアップし、顧問先満足度も向上。',
       color: 'from-emerald-500 to-teal-500'
     },
     {
