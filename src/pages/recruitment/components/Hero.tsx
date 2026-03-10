@@ -29,14 +29,15 @@ export default function Hero({ onCTAClick }: HeroProps) {
           </span>
         </div>
         
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-          収益シミュレーションと<br />
-          <span className="text-amber-400 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">本質的価値</span>
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          【キャリアアップ助成金を扱う社労士様へ】<br />
+          通常の申請手続きを<br />
+          <span className="text-amber-400 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">「1社24万円の超高単価案件」</span>に変えませんか？
         </h1>
         
         <p className="text-xl md:text-2xl text-white mb-12 leading-relaxed max-w-4xl mx-auto font-medium">
-          キャリアアップ助成金の正社員化コースに<span className="text-amber-400 font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">「AI研修」</span>をセット。<br />
-          「重点支援対象者」となることで、社労士報酬・顧問先利益の最大化を実現。
+          顧問先の手残りも<span className="text-emerald-400 font-bold">“24万円”</span>増える、圧倒的提案力の<br />
+          <span className="text-amber-400 font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">「AI研修導入スキーム」</span>を無料公開！
         </p>
 
         <button
