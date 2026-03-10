@@ -30,8 +30,8 @@ export default function RevenueSimulation() {
     <section id="revenue" className="py-24 bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block px-6 py-2 bg-emerald-500 text-white text-sm font-bold rounded-full mb-4">
-            収益シミュレーション
+          <span className="inline-block px-10 py-4 bg-emerald-500 text-white text-xl font-bold rounded-full mb-8 shadow-lg">
+            社労士の収益シミュレーション
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             1社あたり<span className="text-emerald-600">“24万円”</span>の<br />
