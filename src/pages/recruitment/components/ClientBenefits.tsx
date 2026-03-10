@@ -66,10 +66,10 @@ export default function ClientBenefits() {
                     <div className="w-10 h-10 flex items-center justify-center bg-emerald-500 text-white rounded-full font-bold">1</div>
                     <span className="text-base font-medium text-slate-700">キャリアアップ助成金</span>
                   </div>
-                  <div className="text-3xl font-bold text-emerald-600">80万円</div>
+                  <div className="text-3xl font-bold text-emerald-600">60万円</div>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed pl-14">
-                  ※人材開発支援助成金対象研修（AI研修）を行うことで重点支援対象者となり、助成金額が40万円⇒80万円にアップします。
+                  ※人材開発支援助成金対象研修（AI研修）を行うことで重点支援対象者となり、助成金額が40万円⇒60万円にアップします。
                 </p>
               </div>
 
@@ -79,14 +79,14 @@ export default function ClientBenefits() {
                     <div className="w-10 h-10 flex items-center justify-center bg-teal-500 text-white rounded-full font-bold">2</div>
                     <span className="text-base font-medium text-slate-700">人材開発支援助成金</span>
                   </div>
-                  <div className="text-3xl font-bold text-teal-600">30万円</div>
+                  <div className="text-3xl font-bold text-teal-600">44万円</div>
                 </div>
               </div>
 
               <div className="bg-emerald-500 text-white rounded-xl p-4">
                 <div className="flex items-center justify-between">
                   <span className="text-base font-bold">助成金受給総額</span>
-                  <div className="text-4xl font-bold">110万円</div>
+                  <div className="text-4xl font-bold">104万円</div>
                 </div>
               </div>
 
@@ -108,8 +108,8 @@ export default function ClientBenefits() {
 
             <div className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-xl p-6 text-center shadow-xl">
               <div className="text-sm mb-2">会社の手残り</div>
-              <div className="text-6xl font-bold mb-2">70万円</div>
-              <div className="text-sm opacity-90">110万円 - 40万円</div>
+              <div className="text-6xl font-bold mb-2">64万円</div>
+              <div className="text-sm opacity-90">104万円 - 40万円</div>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function ClientBenefits() {
               <div className="text-5xl font-bold text-amber-500">VS</div>
               <div className="text-center">
                 <div className="text-lg text-slate-600 mb-2">本スキーム</div>
-                <div className="text-5xl font-bold text-emerald-600">70万円</div>
+                <div className="text-5xl font-bold text-emerald-600">64万円</div>
               </div>
             </div>
             <div className="bg-white rounded-xl p-8 inline-block shadow-lg">
@@ -134,7 +134,7 @@ export default function ClientBenefits() {
                 AI研修を導入した方が、会社に残るお金が
               </div>
               <div className="text-6xl font-bold text-emerald-600">
-                30万円も多い！
+                24万円も多い！
               </div>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function ClientBenefits() {
               <i className="ri-money-dollar-circle-line text-3xl text-emerald-600"></i>
             </div>
             <h4 className="text-xl font-bold text-slate-900 mb-2">利益アップ</h4>
-            <p className="text-emerald-600 font-bold text-2xl mb-2">+30万円</p>
+            <p className="text-emerald-600 font-bold text-2xl mb-2">+24万円</p>
             <p className="text-slate-600 text-sm">通常申請より手残りが増える</p>
           </div>
 
