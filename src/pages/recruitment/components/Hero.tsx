@@ -31,7 +31,7 @@ export default function Hero({ onCTAClick }: HeroProps) {
         
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
           通常の申請手続きを<br />
-          <span className="text-amber-400 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">「1社24万円の超高単価案件」</span><br />
+          <span className="text-amber-400 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">「申請1名あたり24万円の超高単価案件」</span><br />
           に変えませんか？
         </h1>
         
