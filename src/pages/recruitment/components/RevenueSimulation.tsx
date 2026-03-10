@@ -33,9 +33,9 @@ export default function RevenueSimulation() {
           <span className="inline-block px-10 py-4 bg-emerald-500 text-white text-xl font-bold rounded-full mb-8 shadow-lg">
             社労士の収益シミュレーション
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-noto">
             申請1名あたり<span className="text-emerald-600">“24万円”</span>の<br />
-            正味報酬・内訳
+            　　報酬・内訳
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             顧問先企業の利益を最大化しながら、先生の報酬もこれまでになく拡大します。
