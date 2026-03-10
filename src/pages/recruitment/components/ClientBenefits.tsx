@@ -141,16 +141,17 @@ export default function ClientBenefits() {
                 <div className="text-5xl font-bold text-emerald-600">560,000円</div>
               </div>
             </div>
-            <div className="bg-white rounded-xl p-8 inline-block shadow-lg">
-              <div className="text-2xl font-bold text-slate-900 mb-4 px-4 overflow-hidden text-ellipsis whitespace-nowrap">
-                通常申請（Ａ）と比較して、<br className="sm:hidden" />
+            <div className="bg-white rounded-xl p-4 md:p-8 inline-block shadow-lg w-full md:w-auto">
+              <div className="text-xl md:text-2xl font-bold text-slate-900 mb-4 px-2">
+                通常申請（Ａ）と比較して、<br />
                 手残り利益が
               </div>
-              <div className="text-6xl font-bold text-emerald-600">
+              <div className="text-4xl md:text-6xl font-bold text-emerald-600 leading-tight">
                 「+240,000円」増加
               </div>
-              <p className="mt-4 text-slate-600 text-sm font-medium">
-                研修費用20万円と高額な社労士報酬を支払っても、<br />顧問先企業は確実に利益が増えます
+              <p className="mt-4 text-slate-600 text-xs md:text-sm font-medium leading-relaxed px-2">
+                研修費用20万円と高額な社労士報酬を支払っても、<br className="hidden md:block" />
+                顧問先企業は確実に利益が増えます
               </p>
             </div>
           </div>
