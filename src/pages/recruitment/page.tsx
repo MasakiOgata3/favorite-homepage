@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import ThreeWins from './components/ThreeWins';
 import ClientBenefits from './components/ClientBenefits';
@@ -8,6 +8,19 @@ import ClosingCTA from './components/ClosingCTA';
 
 export default function RecruitmentPage() {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // 検索エンジンから除外するためのnoindexタグを動的に挿入
+  useEffect(() => {
+    const meta = document.createElement('meta');
+    meta.name = 'robots';
+    meta.content = 'noindex';
+    document.head.appendChild(meta);
+
+    // ページを離れるときにタグを削除
+    return () => {
+      document.head.removeChild(meta);
+    };
+  }, []);
 
   if (typeof window !== 'undefined') {
     window.addEventListener('scroll', () => {
