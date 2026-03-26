@@ -142,17 +142,6 @@ export default function TrainingContent() {
           </div>
         </div>
 
-        {/* 労働局対策アピール */}
-        <div className="bg-gradient-to-br from-emerald-600 to-teal-600 rounded-2xl p-10 text-white text-center shadow-2xl">
-          <div className="mb-4">
-            <i className="ri-shield-check-line text-6xl"></i>
-          </div>
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">労働局の審査にも強い、安心のカリキュラム</h3>
-          <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-            本研修は<span className="font-bold text-white">「11時間03分」</span>の体系立てられたプログラムであり、助成金の訓練要件（実体のある研修であること）を完全にクリアしています。<br className="hidden md:block" />
-            自信を持ってキャリアアップ計画・訓練計画に組み込んでいただけます。
-          </p>
-        </div>
 
       </div>
     </section>
