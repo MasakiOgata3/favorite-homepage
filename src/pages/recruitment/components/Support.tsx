@@ -83,7 +83,7 @@ export default function Support() {
             <i className="ri-lightbulb-flash-line text-6xl text-amber-500"></i>
           </div>
           <h3 className="text-3xl font-bold text-slate-900 mb-4">
-            顧問先に「実質負担ゼロでAI研修を導入し、<br />
+            顧問先に「AI研修を導入し、<br />
             業務効率化を進めましょう」と提案するだけです。
           </h3>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
