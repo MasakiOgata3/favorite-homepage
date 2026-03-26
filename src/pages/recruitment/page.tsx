@@ -60,12 +60,12 @@ export default function RecruitmentPage() {
       </nav>
 
       {/* Main Content */}
-      <Hero onCTAClick={scrollToRegister} />
+      <Hero />
 
       {/* 動画セクション */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-lg text-slate-600 mb-8 font-medium">まずはこちらの動画をご覧ください</p>
+          <p className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">まずはこちらの動画をご覧ください</p>
           <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
             <iframe
               className="absolute inset-0 w-full h-full rounded-2xl shadow-2xl"
