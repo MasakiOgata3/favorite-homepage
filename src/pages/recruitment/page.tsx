@@ -5,6 +5,7 @@ import ClientBenefits from './components/ClientBenefits';
 import RevenueSimulation from './components/RevenueSimulation';
 import Support from './components/Support';
 import ClosingCTA from './components/ClosingCTA';
+import TrainingContent from './components/TrainingContent';
 
 export default function RecruitmentPage() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -106,6 +107,7 @@ export default function RecruitmentPage() {
 
       <ThreeWins />
       <ClientBenefits />
+      <TrainingContent />
       <RevenueSimulation />
       <Support />
       <ClosingCTA />
