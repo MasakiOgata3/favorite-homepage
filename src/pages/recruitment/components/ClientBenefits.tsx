@@ -44,7 +44,7 @@ export default function ClientBenefits() {
               </div>
             </div>
 
-            <div className="bg-slate-600 text-white rounded-xl p-6 text-center shadow-lg">
+            <div className="bg-slate-600 text-white rounded-xl p-6 text-center shadow-lg mt-8">
               <div className="text-sm mb-2 opacity-80">手残り利益</div>
               <div className="text-5xl font-bold">320,000円</div>
             </div>
