@@ -91,7 +91,7 @@ export default function RevenueSimulation() {
           <h3 className="text-2xl font-bold mb-4">申請1名あたりの合計報酬</h3>
           <div className="text-7xl font-bold mb-4">22.5万円</div>
           <div className="inline-block bg-white/20 rounded-full px-8 py-3 backdrop-blur-sm">
-            <span className="text-xl font-bold">通常はキャリアアップ助成金40万円の20%で8万円のところ、その3倍の報酬！</span>
+            <span className="text-xl font-bold">通常はキャリアアップ助成金40万円の20%で8万円のところ、その約3倍の報酬！</span>
           </div>
         </div>
 
