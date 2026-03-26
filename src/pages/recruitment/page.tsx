@@ -69,7 +69,7 @@ export default function RecruitmentPage() {
           <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
             <iframe
               className="absolute inset-0 w-full h-full rounded-2xl shadow-2xl"
-              src="https://www.youtube.com/embed/PjyIP3wGHxs"
+              src="https://www.youtube.com/embed/PjyIP3wGHxs?vq=hd1080&rel=0"
               title="解説動画"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
