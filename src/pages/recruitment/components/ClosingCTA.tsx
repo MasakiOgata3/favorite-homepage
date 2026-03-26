@@ -212,7 +212,7 @@ export default function ClosingCTA() {
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white">
             <i className="ri-time-line text-4xl mb-3"></i>
             <h4 className="font-bold mb-2">迅速対応</h4>
-            <p className="text-sm text-white/80">申し込み後、すぐに日程をご案内</p>
+            <p className="text-sm text-white/80">個別相談後すぐに実践可能</p>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white">
             <i className="ri-customer-service-line text-4xl mb-3"></i>
