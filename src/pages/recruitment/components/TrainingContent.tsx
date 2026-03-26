@@ -41,8 +41,8 @@ export default function TrainingContent() {
             AI・DX推進研修
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-            顧問先の社長が「ぜひやりたい！」と<br />
-            <span className="text-emerald-600">即決する。</span>実務直結型の研修
+            社員の生産性が上がる。だから社長が即決する。<br />
+            <span className="text-emerald-600">実務直結型の研修</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
             本スキームでご提供する研修は、助成金受給のための単なるダミーではありません。<br className="hidden md:block" />
