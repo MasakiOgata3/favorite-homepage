@@ -45,8 +45,7 @@ export default function TrainingContent() {
             <span className="text-emerald-600">実務直結型の研修</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-            本スキームでご提供する研修は、助成金受給のための単なるダミーではありません。<br className="hidden md:block" />
-            Google Workspace（Gemini）を活用し、全社員が安全かつ効果的にAIを業務活用できるようになる、<br className="hidden md:block" />
+            本スキームでご提供する研修は、全社員が安全かつ効果的にAIを業務活用できるようになる、<br className="hidden md:block" />
             <span className="font-bold text-slate-800">合計11時間以上の本格的な教育カリキュラム</span>です。
           </p>
         </div>
