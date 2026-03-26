@@ -1,49 +1,23 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 
 export default function ClosingCTA() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    office: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-
-    try {
-      const response = await fetch('https://formspree.io/f/mdakgzdw', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      });
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', phone: '', office: '', message: '' });
-      } else {
-        setSubmitStatus('error');
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.id = 'timerex_embed';
+    script.src = 'https://asset.timerex.net/js/embed.js';
+    script.async = true;
+    script.onload = () => {
+      if ((window as any).TimerexCalendar) {
+        (window as any).TimerexCalendar();
       }
-    } catch (error) {
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    };
+    document.body.appendChild(script);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
+    return () => {
+      const existing = document.getElementById('timerex_embed');
+      if (existing) existing.remove();
+    };
+  }, []);
 
   return (
     <section id="register-section" className="py-24 bg-gradient-to-br from-emerald-500 to-teal-600">
@@ -62,144 +36,12 @@ export default function ClosingCTA() {
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl p-10 shadow-2xl">
-          <form onSubmit={handleSubmit} data-readdy-form id="partner-registration">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-bold text-slate-900 mb-2">
-                  お名前 <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-emerald-500 focus:outline-none transition-colors text-sm"
-                  placeholder="山田 太郎"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-bold text-slate-900 mb-2">
-                  メールアドレス <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-emerald-500 focus:outline-none transition-colors text-sm"
-                  placeholder="example@email.com"
-                />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label htmlFor="phone" className="block text-sm font-bold text-slate-900 mb-2">
-                  電話番号 <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-emerald-500 focus:outline-none transition-colors text-sm"
-                  placeholder="090-1234-5678"
-                />
-              </div>
-              <div>
-                <label htmlFor="office" className="block text-sm font-bold text-slate-900 mb-2">
-                  事務所名 <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="office"
-                  name="office"
-                  value={formData.office}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-emerald-500 focus:outline-none transition-colors text-sm"
-                  placeholder="○○社会保険労務士事務所"
-                />
-              </div>
-            </div>
-
-            <div className="mb-6">
-              <label htmlFor="message" className="block text-sm font-bold text-slate-900 mb-2">
-                ご質問・ご要望（任意）
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                maxLength={500}
-                rows={4}
-                className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-emerald-500 focus:outline-none transition-colors resize-none text-sm"
-                placeholder="ご質問やご要望がありましたらご記入ください（500文字以内）"
-              />
-              <div className="text-right text-xs text-slate-500 mt-1">
-                {formData.message.length}/500文字
-              </div>
-            </div>
-
-            {submitStatus === 'success' && (
-              <div className="mb-6 p-4 bg-emerald-50 border-2 border-emerald-500 rounded-lg">
-                <div className="flex items-center gap-3 mb-3">
-                  <i className="ri-check-line text-2xl text-emerald-600"></i>
-                  <p className="text-emerald-700 font-medium">
-                    登録ありがとうございます！
-                  </p>
-                </div>
-                <p className="text-emerald-700 mb-3">
-                  こちらから登録者限定コミュニティにご参加ください
-                </p>
-                <a
-                  href="https://line.me/ti/g2/wIml7AjogvnBLChPj10lUnGUr4fVCfltbdmyRg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors font-medium"
-                >
-                  <i className="ri-chat-3-line text-xl"></i>
-                  オープンチャット「AI研修×キャリアアップ助成金」に参加
-                  <i className="ri-external-link-line text-lg"></i>
-                </a>
-              </div>
-            )}
-
-            {submitStatus === 'error' && (
-              <div className="mb-6 p-4 bg-red-50 border-2 border-red-500 rounded-lg flex items-center gap-3">
-                <i className="ri-error-warning-line text-2xl text-red-600"></i>
-                <p className="text-red-700 font-medium">
-                  送信に失敗しました。もう一度お試しください。
-                </p>
-              </div>
-            )}
-
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full py-5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-lg font-bold rounded-full hover:from-emerald-600 hover:to-teal-600 transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 whitespace-nowrap cursor-pointer"
-            >
-              {isSubmitting ? (
-                <>
-                  <i className="ri-loader-4-line text-2xl animate-spin"></i>
-                  <span>送信中...</span>
-                </>
-              ) : (
-                <>
-                  <span>個別相談に申し込む（無料）</span>
-                  <i className="ri-arrow-right-line text-2xl"></i>
-                </>
-              )}
-            </button>
-          </form>
+        <div className="bg-white rounded-2xl p-8 shadow-2xl">
+          <p className="text-center font-bold text-slate-800 mb-6">以下のカレンダーからご希望の日時を選択してご予約ください。</p>
+          <div
+            id="timerex_calendar"
+            data-url="https://timerex.net/s/ogata_3a16_c8e2/a254b42b"
+          />
         </div>
 
         {/* Trust Indicators */}
