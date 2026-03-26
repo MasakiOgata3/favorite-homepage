@@ -103,7 +103,7 @@ export default function ClientBenefits() {
               <div className="bg-white rounded-xl p-4 border-2 border-slate-300">
                 <div className="flex items-center justify-between">
                   <span className="text-base font-medium text-slate-700">研修費用</span>
-                  <div className="text-2xl font-bold text-slate-900">-200,000円</div>
+                  <div className="text-2xl font-bold text-rose-500">-200,000円</div>
                 </div>
               </div>
 
