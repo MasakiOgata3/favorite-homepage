@@ -71,9 +71,20 @@ export default function RecruitmentPage() {
               className="absolute inset-0 w-full h-full rounded-2xl shadow-2xl"
               src="https://www.youtube.com/embed/PjyIP3wGHxs"
               title="解説動画"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+          </div>
+          <div className="mt-10">
+            <button
+              onClick={scrollToRegister}
+              className="inline-flex items-center px-6 sm:px-10 py-4 sm:py-5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-base sm:text-lg font-bold rounded-full hover:from-emerald-600 hover:to-teal-600 transition-all duration-300 shadow-2xl hover:shadow-emerald-500/50 hover:scale-105 cursor-pointer"
+            >
+              パートナー登録して制度詳細を見る（無料）
+              <svg className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
