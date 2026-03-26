@@ -19,7 +19,7 @@ export default function RevenueSimulation() {
     {
       icon: 'ri-hand-coin-line',
       title: '研修販売手数料',
-      amount: '5万円',
+      amount: '3.5万円',
       description: 'AI研修紹介による手数料',
       calculation: '',
       color: 'cyan'
@@ -34,7 +34,7 @@ export default function RevenueSimulation() {
             社労士の収益シミュレーション
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-noto">
-            申請1名あたり<span className="text-emerald-600">“24万円”</span>の<br />
+            申請1名あたり<span className=”text-emerald-600”>{'\u201C22.5万円\u201D'}</span>の<br />
             　　報酬・内訳
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -89,7 +89,7 @@ export default function RevenueSimulation() {
             <i className="ri-trophy-line text-6xl"></i>
           </div>
           <h3 className="text-2xl font-bold mb-4">申請1名あたりの合計報酬</h3>
-          <div className="text-7xl font-bold mb-4">24万円</div>
+          <div className="text-7xl font-bold mb-4">22.5万円</div>
           <div className="inline-block bg-white/20 rounded-full px-8 py-3 backdrop-blur-sm">
             <span className="text-xl font-bold">通常はキャリアアップ助成金40万円の20%で8万円のところ、その3倍の報酬！</span>
           </div>
@@ -103,18 +103,18 @@ export default function RevenueSimulation() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center p-6 bg-slate-50 rounded-xl">
               <div className="text-lg text-slate-600 mb-2">3人申請した場合</div>
-              <div className="text-4xl font-bold text-emerald-600 mb-1">72万円</div>
-              <div className="text-sm text-slate-500">24万円 × 3人</div>
+              <div className="text-4xl font-bold text-emerald-600 mb-1">67.5万円</div>
+              <div className="text-sm text-slate-500">22.5万円 × 3人</div>
             </div>
             <div className="text-center p-6 bg-slate-50 rounded-xl border-4 border-emerald-500">
               <div className="text-lg text-slate-600 mb-2">5人申請した場合</div>
-              <div className="text-4xl font-bold text-emerald-600 mb-1">120万円</div>
-              <div className="text-sm text-slate-500">24万円 × 5人</div>
+              <div className="text-4xl font-bold text-emerald-600 mb-1">112.5万円</div>
+              <div className="text-sm text-slate-500">22.5万円 × 5人</div>
             </div>
             <div className="text-center p-6 bg-slate-50 rounded-xl">
               <div className="text-lg text-slate-600 mb-2">10人申請した場合</div>
-              <div className="text-4xl font-bold text-emerald-600 mb-1">240万円</div>
-              <div className="text-sm text-slate-500">24万円 × 10人</div>
+              <div className="text-4xl font-bold text-emerald-600 mb-1">225万円</div>
+              <div className="text-sm text-slate-500">22.5万円 × 10人</div>
             </div>
           </div>
         </div>
