@@ -207,7 +207,7 @@ export default function ClosingCTA() {
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white">
             <i className="ri-shield-check-line text-4xl mb-3"></i>
             <h4 className="font-bold mb-2">完全無料</h4>
-            <p className="text-sm text-white/80">登録費用は一切かかりません</p>
+            <p className="text-sm text-white/80">費用は一切かかりません</p>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white">
             <i className="ri-time-line text-4xl mb-3"></i>
