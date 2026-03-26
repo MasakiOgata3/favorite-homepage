@@ -28,6 +28,27 @@ export default function RecruitmentPage() {
     });
   }
 
+  // YouTube IFrame API で画質を1080pに強制
+  useEffect(() => {
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(tag);
+
+    (window as any).onYouTubeIframeAPIReady = () => {
+      new (window as any).YT.Player('yt-player', {
+        videoId: 'PjyIP3wGHxs',
+        playerVars: { rel: 0 },
+        events: {
+          onReady: (e: any) => e.target.setPlaybackQuality('hd1080'),
+        },
+      });
+    };
+
+    return () => {
+      delete (window as any).onYouTubeIframeAPIReady;
+    };
+  }, []);
+
   const scrollToRegister = () => {
     const element = document.getElementById('register-section');
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -66,14 +87,8 @@ export default function RecruitmentPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">まずはこちらの動画をご覧ください</p>
-          <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
-            <iframe
-              className="absolute inset-0 w-full h-full rounded-2xl shadow-2xl"
-              src="https://www.youtube.com/embed/PjyIP3wGHxs?vq=hd1080&rel=0"
-              title="解説動画"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+          <div className="relative w-full rounded-2xl shadow-2xl overflow-hidden" style={{ paddingTop: '56.25%' }}>
+            <div id="yt-player" className="absolute inset-0 w-full h-full" />
           </div>
           <div className="mt-10">
             <button
