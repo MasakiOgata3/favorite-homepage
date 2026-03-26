@@ -34,7 +34,7 @@ export default function RevenueSimulation() {
             社労士の収益シミュレーション
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-noto">
-            申請1名あたり<span className=”text-emerald-600”>{'\u201C22.5万円\u201D'}</span>の<br />
+            申請1名あたり<span className=”text-emerald-600”>“22.5万円”</span>の<br />
             　　報酬・内訳
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
