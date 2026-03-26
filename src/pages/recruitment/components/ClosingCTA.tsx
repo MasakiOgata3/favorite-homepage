@@ -53,12 +53,12 @@ export default function ClosingCTA() {
             <i className="ri-rocket-line text-7xl text-white"></i>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            まずはパートナー登録をして、<br />
-            登録者限定コミュニティにご参加ください。
+            まずは無料のオンライン個別相談<br />
+            （約30分）にお申し込みください。
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            登録後、登録者限定コミュニティで具体的な申請スキームを全て解説します。<br />
-            今すぐ無料登録して、新しい収益の柱を手に入れましょう。
+            個別相談では、先生の顧問先の状況に合わせて、具体的な導入ステップや収益シミュレーションを直接ご案内します。<br />
+            無理な売り込みは一切ありませんので、お気軽にご予約ください。
           </p>
         </div>
 
@@ -194,7 +194,7 @@ export default function ClosingCTA() {
                 </>
               ) : (
                 <>
-                  <span>無料でパートナー登録する</span>
+                  <span>無料で個別相談に申し込む</span>
                   <i className="ri-arrow-right-line text-2xl"></i>
                 </>
               )}

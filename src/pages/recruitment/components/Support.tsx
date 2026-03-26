@@ -1,15 +1,15 @@
 export default function Support() {
   const supports = [
     {
-      icon: 'ri-group-line',
-      title: '登録者限定コミュニティ',
-      description: '成功事例の共有や、先輩社労士からのアドバイスが受けられる専用コミュニティにご招待',
+      icon: 'ri-file-paper-line',
+      title: '顧問先向け 提案用チラシ',
+      description: '社長にそのまま見せるだけで提案できる、専用の営業チラシ（PDF）をプレゼント。',
       color: 'emerald'
     },
     {
-      icon: 'ri-presentation-line',
-      title: '実践セミナーでの営業トーク指導',
-      description: '顧問先への効果的な提案方法をレクチャー。すぐに使える営業トークを習得',
+      icon: 'ri-calendar-check-line',
+      title: '具体的な導入スケジュール表',
+      description: 'いつ計画届を出し、いつ研修を実施すればいいのかが一目でわかるフロー図をお渡しします。',
       color: 'teal'
     },
     {
@@ -32,7 +32,7 @@ export default function Support() {
             <span className="text-emerald-600">直接フォローします。</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            パートナー登録後、すぐに実践できるよう、万全のサポート体制をご用意しています。
+            個別相談にご参加いただいた先生には、すぐに実践できるよう以下の特典をご用意しています。
           </p>
         </div>
 
@@ -83,8 +83,8 @@ export default function Support() {
             <i className="ri-lightbulb-flash-line text-6xl text-amber-500"></i>
           </div>
           <h3 className="text-3xl font-bold text-slate-900 mb-4">
-            顧問先に「お金を増やしてAIも学べる」と<br />
-            提案するだけです。
+            顧問先に「実質負担ゼロでAI研修を導入し、<br />
+            業務効率化を進めましょう」と提案するだけです。
           </h3>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
             難しい説明は不要。シンプルで分かりやすいメリットを伝えるだけで、顧問先は喜んで導入を決めてくれます。

@@ -74,7 +74,7 @@ export default function RecruitmentPage() {
               onClick={scrollToRegister}
               className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold rounded-full hover:from-emerald-600 hover:to-teal-600 transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap cursor-pointer"
             >
-              無料パートナー登録
+              無料の個別相談に申し込む
             </button>
           </div>
         </div>
