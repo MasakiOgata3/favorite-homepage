@@ -104,7 +104,7 @@ export default function TrainingContent() {
               </li>
               <li className="flex items-start gap-3">
                 <i className="ri-check-line text-teal-500 text-xl mt-0.5 flex-shrink-0"></i>
-                <span className="text-slate-600">助成金で<span className="font-bold text-slate-800">研修費用がカバー</span>されるため、社長の決裁が驚くほどスムーズ</span>
+                <span className="text-slate-600">経営者にとって<span className="font-bold text-slate-800">メリットしかない</span>ため、意思決定がスムーズ</span>
               </li>
             </ul>
           </div>
