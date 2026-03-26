@@ -194,7 +194,7 @@ export default function ClosingCTA() {
                 </>
               ) : (
                 <>
-                  <span>無料で個別相談に申し込む</span>
+                  <span>個別相談に申し込む（無料）</span>
                   <i className="ri-arrow-right-line text-2xl"></i>
                 </>
               )}
