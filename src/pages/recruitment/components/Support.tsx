@@ -3,7 +3,7 @@ export default function Support() {
     {
       icon: 'ri-file-paper-line',
       title: '顧問先向け 提案用チラシ',
-      description: '社長にそのまま見せるだけで提案できる、専用の営業チラシ（PDF）をプレゼント。',
+      description: '社長に見せるだけで提案できるAI研修の内容が載った営業チラシ（PDF）をプレゼント。',
       color: 'emerald'
     },
     {
