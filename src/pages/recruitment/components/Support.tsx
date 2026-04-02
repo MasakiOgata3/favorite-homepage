@@ -70,7 +70,7 @@ export default function Support() {
               </p>
               <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                 <span className="px-4 py-2 bg-white/10 rounded-full text-sm backdrop-blur-sm">助成金申請実績豊富</span>
-                <span className="px-4 py-2 bg-white/10 rounded-full text-sm backdrop-blur-sm">担当した助成金申請、不支給なし</span>
+                <span className="px-4 py-2 bg-white/10 rounded-full text-sm backdrop-blur-sm">助成金申請の支給率100%を維持</span>
                 <span className="px-4 py-2 bg-white/10 rounded-full text-sm backdrop-blur-sm">AI研修スキーム開発者</span>
               </div>
             </div>
