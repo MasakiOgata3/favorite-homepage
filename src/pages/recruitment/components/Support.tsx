@@ -8,8 +8,8 @@ export default function Support() {
     },
     {
       icon: 'ri-calendar-check-line',
-      title: '具体的な導入スケジュール表',
-      description: 'いつ計画届を出し、いつ研修を実施すればいいのかが一目でわかるフロー図をお渡しします。',
+      title: '助成金申請レクチャー',
+      description: '人材開発支援助成金の計画届～支給申請までをサポートします。',
       color: 'teal'
     },
     {
