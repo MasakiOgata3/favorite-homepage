@@ -66,7 +66,7 @@ export default function Support() {
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-3xl font-bold mb-3">講師：尾形（社会保険労務士）</h3>
               <p className="text-slate-300 leading-relaxed mb-4">
-                助成金申請のプロフェッショナルとして、多くの企業の申請をサポート。AI研修と助成金を組み合わせた独自のスキームで、社労士と顧問先企業の成功を支援してきました。
+                助成金申請のプロフェッショナルとして、多くの企業の申請をサポート。AI研修と助成金を組み合わせた独自のスキームで、社労士と顧問先企業の成功を全力で支援します。
               </p>
               <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                 <span className="px-4 py-2 bg-white/10 rounded-full text-sm backdrop-blur-sm">助成金申請実績豊富</span>
